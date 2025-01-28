@@ -16,23 +16,23 @@
         <li><strong>HTML5</strong>: Estrutura do site</li>
         <li><strong>CSS3</strong>: Estilização visual</li>
         <li><strong>JavaScript</strong>: Interatividade e dinamismo</li>
-        <li><strong>React.js</strong>: Biblioteca para construção de interfaces (opcional)</li>
         <li><strong>Tailwind CSS</strong>: Estilização moderna e responsiva</li>
     </ul>
     <h2>📂 Estrutura do Projeto</h2>
     <ul>
         <li><strong>Home:</strong> Introdução e links rápidos</li>
-        <li><strong>Sobre Mim:</strong> Informações sobre minha formação e motivações</li>
+        <li><strong>Sobre Mim:</strong> Informações sobre mim </li>
         <li><strong>Habilidades:</strong> Habilidades técnicas e ferramentas que domino</li>
         <li><strong>Projetos:</strong> Galeria de projetos com links para demonstrações e GitHub</li>
         <li><strong>Contato:</strong> Formulário funcional para mensagens diretas</li>
+        li><strong>Certificados:</strong> Informações sobre minhas formações </li>
     </ul>
     <h2>🚀 Como Executar o Projeto Localmente</h2>
     <ol>
         <li>Clone este repositório:</li>
-        <pre><code>git clone https://github.com/seuusuario/portfolio.git</code></pre>
+        <pre><code>git clone https://github.com/gabrieltech88/portfolio.git</code></pre>
         <li>Entre no diretório do projeto:</li>
-        <pre><code>cd portfolio</code></pre>
+        <pre><code>cd Portfolio</code></pre>
         <li>Instale as dependências (se aplicável):</li>
         <pre><code>npm install</code></pre>
         <li>Inicie o servidor:</li>
