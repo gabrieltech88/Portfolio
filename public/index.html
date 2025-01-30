@@ -3,15 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/G.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jockey+One&family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Gabriel Ramos</title>
 </head>
-<body>
-    <header>
-        <nav>
-            <span>GABRIEL RAMOS</span>
-            <ul>
+<body class="bg-[#383837] text-white">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        orange: "#F38F00"
+                    },
+                    fontFamily: {
+                        jockey: ["Jockey One", "serif"],
+                        spartan: ["League Spartan", "serif"],
+                        kodchasan: ["Kodchasan", "serif"],
+                        montserrat: ["Montserrat", "serif"],
+                        inter: ["Inter", "serif"]
+                    }
+                }
+            }
+        }
+    </script>
+    <header class="justify-items-center ">
+        <nav class="flex flex-row gap-[25rem] mt-8">
+            <p class="text-5xl font-jockey"><span class="text-orange">GABRIEL</span> RAMOS</p>
+            <ul class="flex flex-row gap-[33px] text-[2rem] font-jockey">
                 <li>
-                    <a href="">HOME</a>
+                    <a href="index.html">HOME</a>
                 </li>
                 <li>
                     <a href="">CERTIFICATES</a>
@@ -23,29 +46,29 @@
         </nav>
     </header>
 
-    <main>
-        <section>
-            <div>
-                <p>Bem Vindo!</p>
-                <h1>Eu sou Full-Stack Developer</h1>
-                <p>Eu sou o Gabriel Ramos, tenho 18 anos de idade e 194 cm de altura. Sou um desenvolvedor Full Stack</p>
-                <div>
-                    <a href="">
-                        <img src="./assets/icons/instagram.png" alt="Ícone do instagram">
+    <main class="flex flex-col">
+        <section class="flex flex-row gap-28 w-[1004px] mt-[4rem] items-center ml-[10.5rem]">
+            <div class="w-[35.5rem]">
+                <p class="font-spartan font-semibold text-orange text-3xl mr-1">Bem Vindo!</p>
+                <h1 class="font-jockey text-5xl">Eu sou Full-Stack Developer</h1>
+                <p class="font-kodchasan mt-[9px]">Eu sou o Gabriel Ramos, tenho 18 anos de idade e 194 cm de altura. Sou um desenvolvedor Full Stack</p>
+                <div class="flex w-[262px] mt-[25px] h-[40px] content-center gap-10">
+                    <a href="" class="size-32">
+                        <img src="./assets/icons/instagram.svg" alt="Icone do instagram">
                     </a>
-                    <a href="">
-                        <img src="" alt="">
+                    <a href="" class="size-32">
+                        <img src="./assets/icons/linkdn.svg" alt="">
                     </a>
-                    <a href="">
-                        <img src="" alt="">
+                    <a href="" class="size-32">
+                        <img src="./assets/icons/github.svg" alt="">
                     </a>
-                    <a href="">
-                        <img src="" alt="">
+                    <a href="" class="size-32">
+                        <img src="./assets/icons/wpp.svg" alt="">
                     </a>
                 </div>
             </div>
-            <div>
-                <img src="" alt="">
+            <div >
+                <img src="./assets/photoTeste.png" alt="">
             </div>
         </section>
 
