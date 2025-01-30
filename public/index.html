@@ -10,7 +10,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Gabriel Ramos</title>
 </head>
-<body class="bg-[#383837] text-white">
+<body class="bg-[#383837] text-white font-[16px]">
     <script>
         tailwind.config = {
             theme: {
@@ -30,57 +30,60 @@
         }
     </script>
     <header class="justify-items-center ">
-        <nav class="flex flex-row gap-[25rem] mt-8">
-            <p class="text-5xl font-jockey"><span class="text-orange">GABRIEL</span> RAMOS</p>
-            <ul class="flex flex-row gap-[33px] text-[2rem] font-jockey">
+        <nav class="flex flex-row gap-[25rem] mt-8 ">
+            <p class="text-4xl font-jockey"><span class="text-orange">GABRIEL</span> RAMOS</p>
+            <ul class="flex flex-row gap-[33px] text-[1.25rem] font-jockey ">
                 <li>
-                    <a href="index.html">HOME</a>
+                    <a href="index.html" class="hover:text-orange">HOME</a>
                 </li>
                 <li>
-                    <a href="">CERTIFICATES</a>
+                    <a href="" class="hover:text-orange">ABOUT</a>
                 </li>
                 <li>
-                    <a href="">SOFTWARES</a>
+                    <a href="" class="hover:text-orange">CERTIFICATES</a>
+                </li>
+                <li>
+                    <a href="" class="hover:text-orange">SOFTWARES</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <main class="flex flex-col">
-        <section class="flex flex-row gap-28 w-[1004px] mt-[4rem] items-center ml-[10.5rem]">
-            <div class="w-[35.5rem]">
-                <p class="font-spartan font-semibold text-orange text-3xl mr-1">Bem Vindo!</p>
-                <h1 class="font-jockey text-5xl">Eu sou Full-Stack Developer</h1>
+    <main class="flex flex-col mt-[1rem]">
+        <section class="flex flex-row gap-24  items-center justify-center h-[265px] ">
+            <div class="w-[35.5rem] ">
+                <p class="font-spartan font-semibold text-orange text-2xl mr-1">Bem Vindo!</p>
+                <h1 class="font-jockey text-4xl">Eu sou Full-Stack Developer</h1>
                 <p class="font-kodchasan mt-[9px]">Eu sou o Gabriel Ramos, tenho 18 anos de idade e 194 cm de altura. Sou um desenvolvedor Full Stack</p>
                 <div class="flex w-[262px] mt-[25px] h-[40px] content-center gap-10">
-                    <a href="" class="size-32">
+                    <a href="https://www.instagram.com/rmssgabriel/" class="">
                         <img src="./assets/icons/instagram.svg" alt="Icone do instagram">
                     </a>
-                    <a href="" class="size-32">
-                        <img src="./assets/icons/linkdn.svg" alt="">
+                    <a href="https://www.linkedin.com/in/gabriel-ramos-a4524526a" class="">
+                        <img src="./assets/icons/linkdn.svg" alt="Icone do linkedIn">
                     </a>
-                    <a href="" class="size-32">
-                        <img src="./assets/icons/github.svg" alt="">
+                    <a href="https://github.com/gabrieltech88" class="">
+                        <img src="./assets/icons/github.svg" alt="Icone do GitHub">
                     </a>
-                    <a href="" class="size-32">
-                        <img src="./assets/icons/wpp.svg" alt="">
+                    <a href="https://wa.me/13997209208?text=Oi vim do seu Portfolio, quero falar com você!" class="">
+                        <img src="./assets/icons/wpp.svg" alt="Icone do Whatsapp">
                     </a>
                 </div>
             </div>
             <div >
-                <img src="./assets/photoTeste.png" alt="">
+                <img src="./assets/images/photoTeste.png" alt="" class="size-[225px]">
             </div>
         </section>
 
-        <section>
-            <div>
-                <h2>Sobre</h2>
-                <p>Desenvolvo aplicações full-stack utilizando JavaScript e C#, tanto no front-end quanto no back-end, aplicando princípios de orientação a objetos. No front-end, utilizo React para JavaScript, com Tailwind ou Sass para estilização, e Blazor para criar interfaces dinâmicas com C#. No back-end, trabalho com Node.js e C#, adotando arquiteturas como serverless e microserviços conforme a necessidade. A autenticação é implementada com JWT e OAuth em ambas as linguagens, garantindo segurança e controle de acesso.
+        <section class="flex flex-row justify-center mt-[3rem]">
+            <div class="">
+                <h2 class="text-2xl text-orange font-jockey text-center">Sobre</h2>
+                <p class="w-[482px] font-kodchasan text-sm">Desenvolvo aplicações full-stack utilizando JavaScript e C#, tanto no front-end quanto no back-end, aplicando princípios de orientação a objetos. No front-end, utilizo React para JavaScript, com Tailwind ou Sass para estilização, e Blazor para criar interfaces dinâmicas com C#. No back-end, trabalho com Node.js e C#, adotando arquiteturas como serverless e microserviços conforme a necessidade. A autenticação é implementada com JWT e OAuth em ambas as linguagens, garantindo segurança e controle de acesso.
                     Também foco na qualidade do código, implementando testes automatizados para garantir soluções robustas e confiáveis. Meu objetivo é entregar aplicações seguras, eficientes e escaláveis, utilizando as melhores práticas e tecnologias disponíveis.
                 </p>
             </div>
             <div>
-                <h2>My Skills</h2>
+                <h2 class="text-2xl text-orange font-jockey text-center">My Skills</h2>
                 <div>
                     <ul>
                         <li>
@@ -239,21 +242,21 @@
         </section>
     </main>
 
-    <footer>
-        <section>
-            <p>Conecte-se comigo nas redes sociais</p>
-            <div>
-                <a href="">
-                    <img src="" alt="">
+   <footer class="mt-[3rem] bg-[#4e4e4e] h-[290px]">
+        <section class="flex h-[79px] bg-orange items-center justify-center gap-[20rem]">
+            <p class="font-kodchasan">Conecte-se comigo nas redes sociais</p>
+            <div class="flex flex-row gap-[2rem] items-center">
+                <a href="https://www.instagram.com/rmssgabriel/" class="">
+                    <img src="./assets/icons/instagram.svg" alt="Icone do instagram">
                 </a>
-                <a href="">
-                    <img src="" alt="">
+                <a href="https://www.linkedin.com/in/gabriel-ramos-a4524526a" class="">
+                    <img src="./assets/icons/linkdn.svg" alt="Icone do linkedIn">
                 </a>
-                <a href="">
-                    <img src="" alt="">
+                <a href="https://github.com/gabrieltech88" class="">
+                    <img src="./assets/icons/github.svg" alt="Icone do GitHub">
                 </a>
-                <a href="">
-                    <img src="" alt="">
+                <a href="https://wa.me/13997209208?text=Oi vim do seu Portfolio, quero falar com você!" class="">
+                    <img src="./assets/icons/wpp.svg" alt="Icone do Whatsapp">
                 </a>
             </div>
         </section>
