@@ -6,7 +6,7 @@
     <link rel="icon" href="./assets/G.svg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jockey+One&family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jockey+One&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Gabriel Ramos</title>
 </head>
@@ -23,7 +23,8 @@
                         spartan: ["League Spartan", "serif"],
                         kodchasan: ["Kodchasan", "serif"],
                         montserrat: ["Montserrat", "serif"],
-                        inter: ["Inter", "serif"]
+                        inter: ["Inter", "serif"],
+                        josefin: ["Josefin Sans", "serif"]
                     }
                 }
             }
@@ -56,17 +57,44 @@
                 <h1 class="font-jockey text-4xl">Eu sou Full-Stack Developer</h1>
                 <p class="font-kodchasan mt-[9px]">Eu sou o Gabriel Ramos, tenho 18 anos de idade e 194 cm de altura. Sou um desenvolvedor Full Stack</p>
                 <div class="flex w-[262px] mt-[25px] h-[40px] content-center gap-10">
-                    <a href="https://www.instagram.com/rmssgabriel/" class="">
-                        <img src="./assets/icons/instagram.svg" alt="Icone do instagram">
+                    <a href="https://www.instagram.com/rmssgabriel/" class="hover:text-orange">
+                        <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="stroke-current">
+                            <g clip-path="url(#clip0_14_276)">
+                                <path d="M23 31H9C4.6 31 1 27.4 1 23V9C1 4.6 4.6 1 9 1H23C27.4 1 31 4.6 31 9V23C31 27.4 27.4 31 23 31Z" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16 23C19.866 23 23 19.866 23 16C23 12.134 19.866 9 16 9C12.134 9 9 12.134 9 16C9 19.866 12.134 23 16 23Z" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M24 8C24.5523 8 25 7.55228 25 7C25 6.44772 24.5523 6 24 6C23.4477 6 23 6.44772 23 7C23 7.55228 23.4477 8 24 8Z" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_14_276">
+                                <rect width="32" height="32" fill="white"/>
+                                </clipPath>
+                            </defs>                        
+                        </svg>  
                     </a>
-                    <a href="https://www.linkedin.com/in/gabriel-ramos-a4524526a" class="">
-                        <img src="./assets/icons/linkdn.svg" alt="Icone do linkedIn">
+                    <a href="https://www.linkedin.com/in/gabriel-ramos-a4524526a" class="hover:text-orange">
+                        <svg width="28" height="28" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M28.109 34.4C27.759 34.4 27.474 34.116 27.474 33.766V24.13C27.474 20.646 25.686 20.646 25.012 20.646C23.134 20.646 22.183 21.818 22.183 24.13V33.767C22.183 34.117 21.899 34.401 21.549 34.401H16.1C15.75 34.401 15.466 34.117 15.466 33.767V15.41C15.466 15.06 15.75 14.776 16.1 14.776H21.55C21.9 14.776 22.184 15.06 22.184 15.41V16.094L22.512 15.823C23.802 14.756 25.341 14.215 27.086 14.215C29.243 14.215 31.059 14.904 32.337 16.209C33.687 17.587 34.4 19.639 34.4 22.142V33.767C34.4 34.117 34.115 34.401 33.765 34.401L28.109 34.4ZM25.013 19.376C26.407 19.376 28.745 19.994 28.745 24.13V33.132H33.13V22.142C33.13 17.911 30.927 15.485 27.086 15.485C23.656 15.485 22.17 18.075 22.108 18.185C21.996 18.388 21.784 18.514 21.553 18.514C21.501 18.514 21.448 18.506 21.394 18.493C21.112 18.422 20.915 18.171 20.915 17.883V16.046H16.735V33.133H20.915V24.13C20.915 21.153 22.447 19.376 25.013 19.376Z" fill="currentColor"/>
+                            <path d="M6.78002 34.4C6.43002 34.4 6.14502 34.116 6.14502 33.766V15.41C6.14502 15.06 6.43002 14.776 6.78002 14.776H12.465C12.815 14.776 13.099 15.06 13.099 15.41V33.766C13.099 34.116 12.815 34.4 12.465 34.4H6.78002ZM7.41502 33.132H11.83V16.045H7.41502V33.132Z" fill="currentColor"/>
+                            <path d="M9.59701 13.639C7.39301 13.639 5.60001 11.836 5.60001 9.62001C5.60001 7.40301 7.39301 5.60001 9.59701 5.60001C11.798 5.60001 13.59 7.40401 13.59 9.62101C13.59 11.836 11.798 13.639 9.59701 13.639ZM9.59701 6.86601C8.09301 6.86601 6.87001 8.10101 6.87001 9.62001C6.87001 11.138 8.09301 12.371 9.59701 12.371C11.1 12.371 12.322 11.138 12.322 9.62001C12.321 8.10201 11.1 6.86601 9.59701 6.86601Z" fill="currentColor"/>
+                        </svg>    
                     </a>
-                    <a href="https://github.com/gabrieltech88" class="">
-                        <img src="./assets/icons/github.svg" alt="Icone do GitHub">
+                    <a href="https://github.com/gabrieltech88" class="hover:text-orange">
+                        <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="stroke-current">
+                            <path d="M12 25.3333C5.33332 27.3333 5.33332 22 2.66666 21.3333M21.3333 29.3333V24.1733C21.3833 23.5375 21.2974 22.8984 21.0813 22.2984C20.8652 21.6984 20.5239 21.1512 20.08 20.6933C24.2667 20.2267 28.6667 18.64 28.6667 11.36C28.6663 9.49843 27.9502 7.70826 26.6667 6.36C27.2745 4.73134 27.2315 2.93113 26.5467 1.33333C26.5467 1.33333 24.9733 0.866665 21.3333 3.30666C18.2773 2.47843 15.056 2.47843 12 3.30666C8.35999 0.866665 6.78666 1.33333 6.78666 1.33333C6.10182 2.93113 6.05885 4.73134 6.66666 6.36C5.37349 7.71826 4.65669 9.52462 4.66666 11.4C4.66666 18.6267 9.06666 20.2133 13.2533 20.7333C12.8147 21.1866 12.4763 21.7272 12.2604 22.3199C12.0445 22.9126 11.9557 23.5441 12 24.1733V29.3333" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>    
                     </a>
-                    <a href="https://wa.me/13997209208?text=Oi vim do seu Portfolio, quero falar com você!" class="">
-                        <img src="./assets/icons/wpp.svg" alt="Icone do Whatsapp">
+                    <a href="https://wa.me/13997209208?text=Oi vim do seu Portfolio, quero falar com você!" class="hover:text-orange">
+                        <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_14_285)">
+                            <path d="M27.5103 4.48975C24.615 1.59444 20.7656 0 16.6711 0C12.5766 0 8.72706 1.59444 5.83175 4.48975C2.93644 7.38506 1.34206 11.2344 1.34206 15.3289C1.34206 17.9226 1.99862 20.4714 3.24487 22.7291L0 32L9.27081 28.7552C11.5286 30.0013 14.0773 30.6579 16.671 30.6579C20.7655 30.6579 24.615 29.0634 27.5102 26.1682C30.4055 23.2729 32 19.4235 32 15.3289C32 11.2344 30.4055 7.385 27.5103 4.48975ZM16.6711 28.7809C14.265 28.7809 11.9034 28.1374 9.84188 26.9199L9.46631 26.6981L3.0595 28.9404L5.30188 22.5337L5.08006 22.1581C3.86262 20.0966 3.21913 17.7351 3.21913 15.329C3.21913 7.91156 9.25369 1.87706 16.6711 1.87706C24.0884 1.87706 30.123 7.91163 30.123 15.329C30.123 22.7464 24.0884 28.7809 16.6711 28.7809Z" fill="currentCOlor"/>
+                            <path d="M24.9126 19.0326L22.7006 16.8205C21.9688 16.0886 20.7779 16.0886 20.046 16.8205L19.1999 17.6666C17.1451 16.552 15.4479 14.8549 14.3333 12.8001L15.1794 11.9539C15.5339 11.5994 15.7291 11.128 15.7291 10.6266C15.7291 10.1253 15.5339 9.65388 15.1794 9.29938L12.9673 7.08732C12.6128 6.73282 12.1414 6.53757 11.6401 6.53757C11.1386 6.53757 10.6673 6.73282 10.3128 7.08732L8.54319 8.85694C7.54444 9.85569 7.49745 11.5796 8.41088 13.7109C9.20888 15.5729 10.6699 17.6199 12.5249 19.4749C14.3799 21.3299 16.4269 22.7909 18.2889 23.5889C19.3048 24.0243 20.2278 24.2414 21.0241 24.2414C21.8986 24.2414 22.6202 23.9794 23.1429 23.4566L24.9125 21.687C25.2671 21.3325 25.4623 20.8611 25.4623 20.3598C25.4623 19.8584 25.2671 19.3871 24.9126 19.0326ZM21.8158 22.1295C21.4207 22.5245 20.3266 22.4202 19.0283 21.8638C17.3807 21.1576 15.5424 19.8379 13.8522 18.1477C12.162 16.4575 10.8423 14.6193 10.1361 12.9716C9.57969 11.6733 9.47544 10.5792 9.87038 10.1841L11.6401 8.41451L13.8521 10.6266L12.0572 12.4215L12.3403 13.0192C13.7167 15.9248 16.0749 18.283 18.9806 19.6594L19.5783 19.9426L21.3732 18.1476L23.5853 20.3597L21.8158 22.1295Z" fill="currentCOlor"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_14_285">
+                            <rect width="32" height="32" fill="white"/>
+                            </clipPath>
+                        </defs>
+                        </svg> 
                     </a>
                 </div>
             </div>
@@ -75,168 +103,179 @@
             </div>
         </section>
 
-        <section class="flex flex-row justify-center mt-[3rem]">
+        <section class="flex flex-row justify-center gap-10 mt-[2rem]">
             <div class="">
                 <h2 class="text-2xl text-orange font-jockey text-center">Sobre</h2>
-                <p class="w-[482px] font-kodchasan text-sm">Desenvolvo aplicações full-stack utilizando JavaScript e C#, tanto no front-end quanto no back-end, aplicando princípios de orientação a objetos. No front-end, utilizo React para JavaScript, com Tailwind ou Sass para estilização, e Blazor para criar interfaces dinâmicas com C#. No back-end, trabalho com Node.js e C#, adotando arquiteturas como serverless e microserviços conforme a necessidade. A autenticação é implementada com JWT e OAuth em ambas as linguagens, garantindo segurança e controle de acesso.
+                <p class="w-[440px] font-kodchasan text-sm">Desenvolvo aplicações full-stack utilizando JavaScript e C#, tanto no front-end quanto no back-end, aplicando princípios de orientação a objetos. No front-end, utilizo React para JavaScript, com Tailwind ou Sass para estilização, e Blazor para criar interfaces dinâmicas com C#. No back-end, trabalho com Node.js e C#, adotando arquiteturas como serverless e microserviços conforme a necessidade. A autenticação é implementada com JWT e OAuth em ambas as linguagens, garantindo segurança e controle de acesso.
                     Também foco na qualidade do código, implementando testes automatizados para garantir soluções robustas e confiáveis. Meu objetivo é entregar aplicações seguras, eficientes e escaláveis, utilizando as melhores práticas e tecnologias disponíveis.
                 </p>
             </div>
             <div>
-                <h2 class="text-2xl text-orange font-jockey text-center">My Skills</h2>
+                <h2 class="text-2xl text-orange font-jockey text-center mb-2">My Skills</h2>
                 <div>
-                    <ul>
-                        <li>
-                            <img src="" alt="">
-                            <p></p>
+                    <ul class="font-josefin text-sm grid grid-cols-6 grid-rows-3 gap-4">
+                        <li class="justify-items-center grid gap-[4px]">
+                            <img src="./assets/icons/jsIcon.svg" alt="Icone JavaScript">
+                            <p>JavaScript</p>
                         </li>
-                        <li>
-                            <img src="" alt="">
-                            <p></p>
+                        <li class="justify-items-center grid gap-[4px]">
+                            <img src="./assets/icons/nodejsIcon.svg" alt="Icone Node.Js">
+                            <p>Node.js</p>
                         </li>
-                        <li>
-                            <img src="" alt="">
-                            <p></p>
+                        <li class="justify-items-center grid gap-[4px]">
+                            <img src="./assets/icons/nestJsIcon.svg" alt="Icone Nest.Js">
+                            <p>Nest.js</p>
                         </li>
-                        <li>
-                            <img src="" alt="">
-                            <p></p>
+                        <li class="justify-items-center grid gap-[4px]">
+                            <img src="./assets/icons/mysql.svg" alt="Icone MySql">
+                            <p>My SQL</p>
                         </li>
-                        <li>
-                            <img src="" alt="">
-                            <p></p>
+                        <li class="justify-items-center grid gap-[4px]">
+                            <img src="./assets/icons/react.svg" alt="Icone React">
+                            <p>React</p>
                         </li>
-                        <li>
-                            <img src="" alt="">
-                            <p></p>
+                        <li class="justify-items-center grid gap-[4px]">
+                            <img src="./assets/icons/aspnet.svg" alt="">
+                            <p>ASP.NET</p>
                         </li>
-                        <li>
-                            <img src="" alt="">
-                            <p></p>
+                        <li class="justify-items-center grid gap-[4px]">
+                            <img src="./assets/icons/html.svg" alt="Icone HTML">
+                            <p>HTML5</p>
                         </li>
-                        <li>
-                            <img src="" alt="">
-                            <p></p>
+                        <li class="justify-items-center grid gap-[4px]">
+                            <img src="./assets/icons/css.svg" alt="Icone CSS">
+                            <p>CSS3</p>
                         </li>
-                        <li>
-                            <img src="" alt="">
-                            <p></p>
+                        <li class="justify-items-center grid gap-[4px]">
+                            <img src="./assets/icons/sass.svg" alt="Icone SASS">
+                            <p>Sass</p>
                         </li>
-                        <li>
-                            <img src="" alt="">
-                            <p></p>
+                        <li class="justify-items-center grid gap-[4px]">
+                            <img src="./assets/icons/tailwindcss.svg" alt="Icone TailwindCSS">
+                            <p>TailwindCSS</p>
                         </li>
-                        <li>
-                            <img src="" alt="">
-                            <p></p>
+                        <li class="justify-items-center grid gap-[4px]">
+                            <img src="./assets/icons/figma.svg" alt="Icone figma">
+                            <p>Figma</p>
                         </li>
-                        <li>
-                            <img src="" alt="">
-                            <p></p>
+                        <li class="justify-items-center grid gap-[4px]">
+                            <img src="./assets/icons/git.svg" alt="Icone Git">
+                            <p>Git</p>
                         </li>
-                        <li>
-                            <img src="" alt="">
-                            <p></p>
+                        <li class="justify-items-center grid gap-[4px]">
+                            <img src="./assets/icons/linux.svg" alt="Icone linux">
+                            <p>Linux</p>
                         </li>
-                        <li>
-                            <img src="" alt="">
-                            <p></p>
+                        <li class="justify-items-center grid gap-[4px]">
+                            <img src="./assets/icons/dotnet.svg" alt="Icone DotNet">
+                            <p>.NET</p>
                         </li>
-                        <li>
-                            <img src="" alt="">
-                            <p></p>
+                        <li class="justify-items-center grid gap-[4px]">
+                            <img src="./assets/icons/tsIcon.svg" alt="">
+                            <p>TypeScript</p>
                         </li>
-                        <li>
-                            <img src="" alt="">
-                            <p></p>
+                        <li class="justify-items-center grid gap-[4px]">
+                            <img src="./assets/icons/rabbit.svg" alt="">
+                            <p>RabbitMQ</p>
                         </li>
-                        <li>
-                            <img src="" alt="">
-                            <p></p>
+                        <li class="justify-items-center grid gap-[4px]">
+                            <img src="./assets/icons/serverless.svg" alt="">
+                            <p>Serverless</p>
                         </li>
-                        <li>
-                            <img src="" alt="">
-                            <p></p>
-                        </li>
-                        <li>
-                            <img src="" alt="">
-                            <p></p>
+                        <li class="justify-items-center grid gap-[4px]">
+                            <img src="./assets/icons/windows.svg" alt="">
+                            <p>Windows</p>
                         </li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <section>
-            
+        <section class="mt-[3rem] flex flex-col items-center ml-[-6rem]">
             <div>
-                <div>
-                    <h3></h3>
-                    <h4></h4>
-                    <p></p>
-                </div>
-                
-                <div>
-                    <h3></h3>
-                    <h4></h4>
-                    <p></p>
-                </div>
-                
-                <div>
-                    <h3></h3>
-                    <h4></h4>
-                    <p></p>
+                <div class="flex gap-[109px] ml-[169px]">
+                    <div class="w-[240px]">
+                        <h3 class="font-montserrat text-orange font-bold"> ESCOLA DE IDIOMAS CNA | 2011 – 2013 </h3>
+                        <h4 class="text-xs font-inter font-semibold">Estudante de Inglês</h4>
+                        <p class="font-kodchasan text-xs">Durante o período em que estudei no CNA, iniciei minha jornada no aprendizado de inglês e progredi do estágio básico até o intermediário</p>
+                    </div>
+                    
+                    <div class="w-[240px]">
+                        <h3 class="font-montserrat text-orange font-bold"> ALURA | 2021 </h3>
+                        <h4 class="text-xs font-inter font-semibold">Cursos de Tecnologias</h4>
+                        <p class="font-kodchasan text-xs">Iniciei meus estudos de programação na alura, onde realizado a obtenção de certificações até hoje e aqui obtive grande parte do meu aprendizado em JavaScript, C#, Linux, MySQL, HTML, CSS, Git e por consequência me aprofundei em FrameWorks e outras tecnologias</p>
+                    </div>
+                    
+                    <div class="w-[240px]">
+                        <h3 class="font-montserrat text-orange font-bold"> ESCOLA CELESTIN FREINET | 2021 - 2023 </h3>
+                        <h4 class="text-xs font-inter font-semibold">Ensino Médio</h4>
+                        <p class="font-kodchasan text-xs">No ano de 2023 fiz a conclusão do ensino médio e finalizei o ano com a realização de um TCC sobre prevenção de lesões em atletas</p>
+                    </div>
                 </div>
                 
                
-                <div>
-                    <h2>2006</h2>
-                    <img src="" alt="">
-                    <p></p>
+                <div class="flex gap-[5px] items-center">
+                    <h2 class="text-orange font-jockey text-3xl ml-[65px]">2006</h2>
+                    <img src="./assets/icons/relogio.svg" alt="">
+                    <div class="flex items-center">
+                        <!-- Corpo da flecha -->
+                        <div class="w-[1110px] h-[3px] bg-white"></div>
+                        
+                        <!-- Ponta da flecha, apontando para a direita -->
+                        <div class="w-0 h-0 border-t-8 border-b-8 border-r-8 border-transparent border-l-8 border-l-white ml-0"></div>
+                    </div>
                 </div>  
 
-                <div>
-                    <h3></h3>
-                    <h4></h4>
-                    <p></p>
-                </div>
                 
-                <div>
-                    <h3></h3>
-                    <h4></h4>
-                    <p></p>
-                </div>
-                
-                <div>
-                    <h3></h3>
-                    <h4></h4>
-                    <p></p>
+                <div class="flex gap-[109px] ml-[301px]">
+                    <div class="w-[240px]">
+                        <h3 class="font-montserrat text-orange font-bold"> RAPID FIBRA | 2020</h3>
+                        <h4 class="text-xs font-inter font-semibold">Auxiliar de Estoque</h4>
+                         <p class="font-kodchasan text-xs">Em 2020, atuei como Auxiliar de Estoque na Rapid Fibra do início de 2021 até o fim de 2021, onde fui responsável pela organização, controle e reposição de materiais no estoque, alé disso, pude obter mais conhecimento sobre fibra óptica</p>
+                    </div>
+                        
+                    <div class="w-[240px]">
+                        <h3 class="font-montserrat text-orange font-bold"> ESCOLA FORTEC | 2021 </h3>
+                        <h4 class="text-xs font-inter font-semibold">Curso Técnico em Mecatrônica</h4>
+                        <p class="font-kodchasan text-xs">Cursei dois semestres do Técnico em Mecatrônica na Fortec, onde desenvolvi habilidades em áreas como automação industrial, eletrônica, mecânica e programação e obtive o meu primeiro contato com C#</p>
+                    </div>
+                        
+                    <div class="w-[240px]">
+                        <h3 class="font-montserrat text-orange font-bold"> OCCAFÉ | 2022 -2023 </h3>
+                        <h4 class="text-xs font-inter font-semibold">Barista</h4>
+                        <p class="font-kodchasan text-xs">Atuei como Barista nessa cafeteria do início de 2022 até novembro de 2023, adquiri conhecimento em manipulação e confecção em bebidas quentes e geladas não alcólicas e pude obter breve conhecimentos sobre confeitaria</p>
+                    </div>
                 </div>
             </div>
 
-            <div>
-                <div>
-                    <h3></h3>
-                    <h4></h4>
-                    <p></p>
+            <div class="mt-8">
+                <div class="flex gap-[109px] ml-[460px]">
+                    <h3 class="text-orange font-jockey text-3xl mt-24">Today...</h3>
+                    <div class="w-[240px]">
+                        <h3 class="font-montserrat text-orange font-bold">ESAMC | 2025 - 2030</h3>
+                        <h4 class="text-xs font-inter font-semibold">Engenharia da Computação</h4>
+                         <p class="font-kodchasan text-xs">Iniciei a graduação na faculdade Esamc(Polo de Santos) no curso de engenharia da computação em busca de expandir meus conhecimentos afim de ser cada vez melhor e ampliar a minha rede de contato</p>
+                    </div>
+                        
+                    <div class="w-[240px]">
+                        <h3 class="font-montserrat text-orange font-bold"> ESCOLA DE IDIOMAS CNA | 2023 </h3>
+                        <h4 class="text-xs font-inter font-semibold">Estudante de Inglês</h4>
+                        <p class="font-kodchasan text-xs">Retornei aos estudos no idioma americano em 2023 e consegui progredir do estágio intermediário para o avançado</p>
+                    </div>
                 </div>
                 <div>
-                    <h3></h3>
-                    <h4></h4>
-                    <p></p>
-                </div>
-
-                 
-                <h3>Today</h3>
-                <div>
-                    <img src="" alt="">
-                    <p></p>
+                    <div class="flex items-center">
+                        <!-- Ponta da flecha, apontando para a direita -->
+                        <div class="w-0 h-0 border-t-8 border-b-8 border-l-8 border-transparent border-r-8 border-r-white ml-[140px]"></div>
+                        <!-- Corpo da flecha -->
+                        <div class="w-[1110px] h-[3px] bg-white"></div>
+                    </div>
                 </div>  
 
-                <div>
-                    <h3></h3>
-                    <h4></h4>
-                    <p></p>
+                <div  class="w-[240px] ml-[800px]">
+                    <h3 class="font-montserrat text-orange font-bold"> RAPID FIBRA | 2023 - ATUAL </h3>
+                    <h4 class="text-xs font-inter font-semibold" > Analista de Infraestrutura </h4>
+                    <p class="font-kodchasan text-xs"> Retornei a Rapid Fibra, porém dessa vez atuando na parte de infraestrutura e também fazendo parte do time de engenharia, atuando tanto na parte física e parte lógica(Servidores, Switches...)  </p>
                 </div>
             </div>
         </section>
