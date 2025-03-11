@@ -25,7 +25,7 @@
         <li><strong>Habilidades:</strong> Habilidades técnicas e ferramentas que domino</li>
         <li><strong>Projetos:</strong> Galeria de projetos com links para demonstrações e GitHub</li>
         <li><strong>Contato:</strong> Formulário funcional para mensagens diretas</li>
-        li><strong>Certificados:</strong> Informações sobre minhas formações </li>
+        <li><strong>Certificados:</strong> Informações sobre minhas formações </li>
     </ul>
     <h2>🚀 Como Executar o Projeto Localmente</h2>
     <ol>
