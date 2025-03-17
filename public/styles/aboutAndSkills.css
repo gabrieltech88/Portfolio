@@ -11,6 +11,10 @@
 
 }
 
+main {
+    margin-top: 60px;
+}
+
 #aboutme {
     width: 70%;
     display: grid;
@@ -103,4 +107,26 @@ hr {
 
 .text {
     font-family: var(--spartan);
+    margin-top: 8px;
+}
+
+#skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+.items-list-skills {
+    background-color: #232323;
+    border-radius: 7px;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    font-size: 14px;
+    font-family: var(--spartan);
+}
+
+.items-list-skills:hover {
+    background-color: #5a5959;
 }
