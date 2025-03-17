@@ -1,0 +1,211 @@
+:root {
+    --backgroud: #383837;
+    --orange-primary: #F38F00 ;
+    --orange-secondary: #E57600;
+    --montserrat: 'Montserrat', serif;
+    --inter: 'Inter', serif;
+    --spartan: 'League Spartan', serif;
+    --kodchasan: 'Kodchasan', serif;
+    --josefin: 'Josefin Sans', serif;
+    --jockey: 'Jockey One', serif;
+
+}
+
+#timeline-container {
+    display: flex;
+    margin-top: 64px;
+    flex-direction: column;
+    width: 90%;
+}
+
+.container-one-top {
+    display: flex;
+    gap: 109px;
+    margin-left: 108px;
+}
+
+.container-one-top .cards {
+    width: 240px;
+}
+
+.container-one-top .tittle {
+    color: var(--orange-primary);
+    font-family: var(--montserrat);
+    font-weight: bold;
+}
+
+.container-one-top .second-tittle {
+    font-family: var(--inter);
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.container-one-top .text {
+    font-family: var(--kodchasan);
+    font-size: 12px;
+}
+
+.arrow-one-container {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.arrow-one-container .tittle {
+    font-family: var(--jockey);
+    color: var(--orange-primary);
+    font-size: 30px;
+}
+
+.arrow-one-container .container-arrow {
+    display: flex;
+    align-items: center;
+}
+
+.arrow-one-container .container-arrow .body {
+    width: 1100px;
+    height: 3px;
+    background-color: white;
+}
+
+.arrow-one-container .container-arrow .arrow {
+    width: 0;
+    height: 0;
+    border-left: 14px solid white;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+}
+
+/*Under first arrow*/
+.container-one-bottom {
+    display: flex;
+    gap: 109px;
+    margin-left: 209px;
+}
+
+.container-one-bottom .cards {
+    width: 240px;
+}
+
+.container-one-bottom .tittle {
+    color: var(--orange-primary);
+    font-family: var(--montserrat);
+    font-weight: bold;
+}
+
+.container-one-bottom .second-tittle {
+    font-family: var(--inter);
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.container-one-bottom .text {
+    font-family: var(--kodchasan);
+    font-size: 12px;
+}
+
+/*Under second card*/
+.container-second-top {
+    display: flex;
+    gap: 109px;
+    margin-left: 209px;
+    margin-top: 32px;
+    justify-content: flex-end;
+    margin-right: 50px;
+    margin-bottom: 8px;
+}
+
+.container-second-top .cards {
+    width: 240px;
+}
+
+.container-second-top .tittle {
+    color: var(--orange-primary);
+    font-family: var(--montserrat);
+    font-weight: bold;
+}
+
+.container-second-top .second-tittle {
+    font-family: var(--inter);
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.container-second-top .text {
+    font-family: var(--kodchasan);
+    font-size: 12px;
+}
+
+.arrow-second-container {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-left: 80px;
+}
+
+.arrow-second-container .tittle {
+    font-family: var(--jockey);
+    color: var(--orange-primary);
+    font-size: 30px;
+}
+
+.arrow-second-container .container-arrow {
+    display: flex;
+    align-items: center;
+}
+
+.arrow-second-container .container-arrow .body {
+    width: 1100px;
+    height: 3px;
+    background-color: white;
+}
+
+.arrow-second-container .container-arrow .arrow {
+    width: 0;
+    height: 0;
+    border-right: 14px solid white;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+}
+
+/*Under second arrow*/
+
+.container-second-bottom {
+    display: flex;
+    gap: 109px;
+    justify-content: flex-end;
+    margin-right: 200px;
+    margin-top: 8px;
+    margin-bottom: 32px;
+}
+
+.container-second-bottom .cards {
+    width: 240px;
+}
+
+.container-second-bottom .tittle {
+    color: var(--orange-primary);
+    font-family: var(--montserrat);
+    font-weight: bold;
+}
+
+.container-second-bottom .second-tittle {
+    font-family: var(--inter);
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.container-second-bottom .text {
+    font-family: var(--kodchasan);
+    font-size: 12px;
+}
+
+#today {
+    font-family: var(--jockey);
+    color: var(--orange-primary);
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    font-size: 30px;
+    margin-bottom: 20px;
+}

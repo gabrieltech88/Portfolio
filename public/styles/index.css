@@ -1,0 +1,93 @@
+:root {
+    --secondary-backgroud: #383837;
+    --background: #0f0f0f;
+    --orange-primary: #F38F00 ;
+    --orange-secondary: #E57600;
+    --montserrat: 'Montserrat', serif;
+    --inter: 'Inter', serif;
+    --spartan: 'League Spartan', serif;
+    --kodchasan: 'Kodchasan', serif;
+    --josefin: 'Josefin Sans', serif;
+    --jockey: 'Jockey One', serif;
+
+}
+
+body {
+    background-color: var(--backgroud);
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+}
+
+/*Header*/
+#header {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    font-family: var(--jockey);
+    font-size: 22px;
+    margin-top: 16px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 40px;
+    padding: 5px;
+}
+
+.navigation-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#text-header .bold {
+    color: var(--orange-primary)
+}
+
+.list-header {
+    display: flex;
+    list-style: none;
+    gap: 33px;
+}
+
+.item-list-header {
+    display: flex;
+    align-items: center;
+}
+
+.link-header {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    align-items: center;
+}
+
+.link-header:hover {
+    color: var(--orange-primary);
+    display: inline-block;
+    transition: all 0.3s; /* Transição suave de 300ms para todos os estilos */
+    transform: scale(1); /* Transformação inicial, sem escalonamento */
+    transform: scale(1.05); /* Aumenta o tamanho do elemento em 25% ao passar o mouse */
+}
+
+#header .navigation-header #icons-container {
+    display: flex;
+}
+
+#header .navigation-header #icons-container .icons {
+    color: #555555;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-list {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+#header .navigation-header #icons-container .icons:hover {
+    color: var(--orange-primary);
+}

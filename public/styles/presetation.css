@@ -1,0 +1,71 @@
+:root {
+    --backgroud: #383837;
+    --orange-primary: #F38F00 ;
+    --orange-secondary: #E57600;
+    --montserrat: 'Montserrat', serif;
+    --inter: 'Inter', serif;
+    --spartan: 'League Spartan', serif;
+    --kodchasan: 'Kodchasan', serif;
+    --josefin: 'Josefin Sans', serif;
+    --jockey: 'Jockey One', serif;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#presetation-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    align-items: center;
+    margin-right: 50px;
+    background: linear-gradient(45deg, var(--orange-primary), #ff5500);
+    width: 100%;
+    padding: 15px;
+}
+
+.infos-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.infos-container .mini-tittle {
+    font-family: var(--spartan);
+    font-weight: 600;   
+    font-size: 32px;
+}
+
+.infos-container .tittle {
+    font-family: var(--jockey);
+    font-size: 48px;
+    
+}
+
+.infos-container .text-presetation {
+    font-family: var(--kodchasan);
+    color: var(--backgroud);
+}
+
+#icons-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 12px;
+}
+
+#icons-container .icons {
+    color: var(--backgroud);
+}
+
+#icons-container .icons:hover {
+    color: var(--orange-primary)
+}
+
+#image-presentation {
+    height: 179px;
+}
