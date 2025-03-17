@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/G.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jockey+One&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Gabriel Ramos</title>
+</head>
+<body class="bg-[#383837] text-white font-[16px]">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        orange: "#F38F00"
+                    },
+                    fontFamily: {
+                        jockey: ["Jockey One", "serif"],
+                        spartan: ["League Spartan", "serif"],
+                        kodchasan: ["Kodchasan", "serif"],
+                        montserrat: ["Montserrat", "serif"],
+                        inter: ["Inter", "serif"],
+                        josefin: ["Josefin Sans", "serif"]
+                    }
+                }
+            }
+        }
+    </script>
+    <header class="justify-items-center ">
+        <nav class="flex flex-row gap-[25rem] mt-8 ">
+            <p class="text-4xl font-jockey"><span class="text-orange">GABRIEL</span> RAMOS</p>
+            <ul class="flex flex-row gap-[33px] text-[1.25rem] font-jockey ">
+                <li>
+                    <a href="index.html" class="hover:text-orange">HOME</a>
+                </li>
+                <li>
+                    <a href="" class="hover:text-orange">ABOUT</a>
+                </li>
+                <li>
+                    <a href="" class="hover:text-orange">CERTIFICATES</a>
+                </li>
+                <li>
+                    <a href="" class="hover:text-orange">SOFTWARES</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
