@@ -13,8 +13,12 @@
     <link rel="stylesheet" href="./dist/reset.css">
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/presetation.css">
-    <link rel="stylesheet" href="./styles/aboutAndSkills.css">
+    <link rel="stylesheet" href="./styles/about.css">
+    <link rel="stylesheet" href="./styles/skills.css">
     <link rel="stylesheet" href="./styles/services.css">
+    <link rel="stylesheet" href="./styles/projects.css">
+    <link rel="stylesheet" href="./styles/form.css">
+    <link rel="stylesheet" href="./styles/footer.css">
 
     <title>Gabriel Ramos</title>
 </head>
@@ -29,13 +33,13 @@
             </div>
             <ul class="list-header ">
                 <li class="item-list-header">
-                    <a href="" class="link-header">HOME</a>
+                    <a href="#header" class="link-header">HOME</a>
                 </li>
                 <li class="item-list-header">
-                    <a href="" class="link-header">ABOUT</a>
+                    <a href="#about" class="link-header">ABOUT</a>
                 </li>
                 <li class="item-list-header">
-                    <a href="" class="link-header">PROJECTS</a>
+                    <a href="#projects" class="link-header">PROJECTS</a>
                 </li>
             </ul>
             <div id="icons-container">
@@ -89,183 +93,335 @@
     </header>
 
     <main>
-        <section id="presetation-container">
+        <!-- <section id="presetation-container">
             <div class="infos-container">
                 <h1 class="tittle">Gabriel Ramos</h1>
                 <h2 class="mini-tittle">Full-Stack Developer</h2>
                 <p class="text-presetation">Bulding modern applications in the front and back-end</p>
                 <div id="icons-container">
                 </div>
-            </div>
+            </div> 
 
+        </section> -->
+
+        <section id="about">
+            <div id="about-container">
+                <div class="about">
+                    <h2 class="mini-tittle">../About</h2>
+                    <h2 class="tittle">About me</h2>
+                    <div>
+                        <img src="./assets/images/photoTeste.png" alt="" id="image-presentation">
+                    </div>
+                </div>
+                <div class="text-container">
+                    <div class="texts">
+                        <p class="text">
+                            Hello! I am a Computer Engineering student and I am passionate about developing solutions.
+                            As a Full-Stack developer, I have experience in Node.js, .NET Core, TailwindCSS, Nest.js and
+                            SQL
+                            and
+                            NoSQL databases, but
+                            my goal is to become a complete Full-Stack developer using React and Serverless.
+                        </p>
+                        <p class="text">My experience spans multiple technologies, including HTML, CSS, JavaScript,
+                            Node,
+                            React,
+                            C#, and Nest.js. I use these tools to create robust, intuitive, and responsive solutions,
+                            always
+                            seeking the best user experience.</p>
+                    </div>
+                    <h2 class="tittle-key">Key Skills</h2>
+                    <ul class="keys-list">
+                        <li class="items-list">
+                            <p>JavaScript</p>
+                        </li>
+                        <li class="items-list">
+                            <p>Node.js</p>
+                        </li>
+                        <li class="items-list">
+                            <p>.NET</p>
+                        </li>
+                        <li class="items-list">
+                            <p>Nest.js</p>
+                        </li>
+                        <li class="items-list">
+                            <p>React</p>
+                        </li>
+                        <li class="items-list">
+                            <p>Linux</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
-        <section id="aboutme">
-            <div class="about">
-                <h2 class="mini-tittle">../About</h2>
-                <h2 class="tittle">About me</h2>
+        <section id="skills">
+            <div class="skills-container">
+                <h2 class="mini-tittle">../Habilities</h2>
                 <div>
-                    <img src="./assets/images/photoTeste.png" alt="" id="image-presentation">
+                    <h2 class="tittle">My Skills</h2>
+                    <p class="text">My experience spans a wide range of technologies and tools. Here are some of the key
+                        skills I use in my projects:</p>
                 </div>
-            </div>
-            <div class="text-container">
-                <div class="texts">
-                    <p class="text">
-                        Hello! I am a Computer Engineering student and I am passionate about developing solutions.
-                        As a Full-Stack developer, I have experience in Node.js, .NET Core, TailwindCSS, Nest.js and SQL
-                        and
-                        NoSQL databases, but
-                        my goal is to become a complete Full-Stack developer using React and Serverless.
-                    </p>
-                    <p class="text">My experience spans multiple technologies, including HTML, CSS, JavaScript, Node,
-                        React,
-                        C#, and Nest.js. I use these tools to create robust, intuitive, and responsive solutions, always
-                        seeking the best user experience.</p>
-                </div>
-                <h2 class="tittle-key">Key Skills</h2>
-                <ul class="keys-list">
-                    <li class="items-list">JavaScript</li>
-                    <li class="items-list">Node.js</li>
-                    <li class="items-list">Ecosystem .NET</li>
-                    <li class="items-list">Nest.js</li>
-                    <li class="items-list">TailwindCSS</li>
-                    <li class="items-list">React</li>
+                <hr>
+                <ul id="skills-list">
+                    <li class="items-list-skills">JavaScript</li>
+                    <li class="items-list-skills">Node.js</li>
+                    <li class="items-list-skills">Nest.js</li>
+                    <li class="items-list-skills">Express.js</li>
+                    <li class="items-list-skills">.NET</li>
+                    <li class="items-list-skills">MySql</li>
+                    <li class="items-list-skills">MongoDB</li>
+                    <li class="items-list-skills">Linux</li>
+                    <li class="items-list-skills">Sequelize ORM</li>
+                    <li class="items-list-skills">Sass</li>
+                    <li class="items-list-skills">TailwindCSS</li>
+                    <li class="items-list-skills">RabbitMQ</li>
+                    <li class="items-list-skills">TypeScript</li>
+                    <li class="items-list-skills">HTML5</li>
+                    <li class="items-list-skills">CSS3</li>
+                    <li class="items-list-skills">Jest</li>
+                    <li class="items-list-skills">Docker</li>
+                    <li class="items-list-skills">React</li>
+                    <li class="items-list-skills">Git</li>
+                    <li class="items-list-skills">Serverless</li>
+                    <li class="items-list-skills">Chai</li>
+                    <li class="items-list-skills">Microservices</li>
                 </ul>
             </div>
         </section>
 
-        <section class="skills-container">
-            <h2 class="mini-tittle">../Habilities</h2>
-            <div>
-                <h2 class="tittle">My Skills</h2>
-                <p class="text">Minha experiência abrange uma ampla gama de tecnologias e ferramentas. Aqui estão
-                    algumas das principais habilidades que utilizo em meus projetos:</p>
+        <section id="services">
+            <div id="services-container">
+                <h2 class="mini-tittle">../Works</h2>
+                <h2 class="tittle">Services</h2>
+                <p></p>
+                <hr>
+                <ul id="services-list">
+                    <li class="items-list-services">
+                        <div class="infos-services">
+                            <img src="./assets/icons/site.svg" alt="" class="icons-services">
+                            <h3 class="tittle-services">Web Development</h3>
+
+                            <p class="description">Crafting responsive, modern, and visually appealing websites tailored
+                                to
+                                enhance your online presence, engage your target audience effectively, and ensure
+                                seamless
+                                performance across all devices and browsers</p>
+                        </div>
+                    </li>
+                    <li class="items-list-services">
+                        <div class="infos-services">
+                            <img src="./assets/icons/software.svg" alt="" class="icons-services">
+                            <h3 class="tittle-services">Software Development</h3>
+
+                            <p class="description">Creating custom, high-quality software solutions designed to address
+                                your
+                                specific needs, ranging from powerful desktop tools to comprehensive enterprise systems,
+                                delivering reliability and scalability for your operations</p>
+
+                        </div>
+                    </li>
+                    <li class="items-list-services">
+                        <div class="infos-services">
+                            <img src="./assets/icons/api.png" alt="" class="icons-services">
+                            <h3 class="tittle-services">APIs</h3>
+
+                            <p class="description">API creation and integration services by developing customized APIs
+                                and
+                                seamlessly connecting them to your existing systems. I ensure secure, scalable, and
+                                efficient data exchanges, optimizing your digital ecosystem and enhancing overall
+                                functionality
+                            </p>
+
+                        </div>
+                    </li>
+                    <li class="items-list-services">
+                        <div class="infos-services">
+                            <img src="./assets/icons/mobile.svg" alt="" class="icons-services">
+                            <h3 class="tittle-services">Mobile Apps</h3>
+
+                            <p class="description">Developing user-friendly and innovative mobile applications for both
+                                Android and iOS platforms, transforming your ideas into fully functional, engaging
+                                solutions
+                                that users can access anytime, anywhere on their devices</p>
+
+                        </div>
+                    </li>
+                    <li class="items-list-services">
+                        <div class="infos-services">
+                            <img src="./assets/icons//automation.png" alt="" class="icons-services">
+                            <h3 class="tittle-services">Automation</h3>
+                            <p class="description">Implementing automation solutions by developing smart scripts and
+                                advanced tools to eliminate repetitive tasks, optimize operational efficiency, save
+                                valuable
+                                time, and significantly boost productivity across your projects</p>
+                        </div>
+                    </li>
+                    <li class="items-list-services">
+                        <div class="infos-services">
+                            <img src="./assets/icons/security.svg" alt="" class="icons-services">
+                            <h3 class="tittle-services">Security</h3>
+
+                            <p class="description">Offering security implementation and automated testing services to
+                                safeguard and optimize your systems. I create tailored security measures and test
+                                scripts to
+                                ensure robust protection and performance.</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <hr>
-            <ul id="skills-list">
-                <li class="items-list-skills">JavaScript</li>
-                <li class="items-list-skills">Node.js</li>
-                <li class="items-list-skills">Nest.js</li>
-                <li class="items-list-skills">Express.js</li>
-                <li class="items-list-skills">.NET</li>
-                <li class="items-list-skills">MySql</li>
-                <li class="items-list-skills">MongoDB</li>
-                <li class="items-list-skills">Linux</li>
-                <li class="items-list-skills">Sequelize ORM</li>
-                <li class="items-list-skills">Sass</li>
-                <li class="items-list-skills">TailwindCSS</li>
-                <li class="items-list-skills">RabbitMQ</li>
-                <li class="items-list-skills">TypeScript</li>
-                <li class="items-list-skills">HTML5</li>
-                <li class="items-list-skills">CSS3</li>
-                <li class="items-list-skills">Jest</li>
-                <li class="items-list-skills">Docker</li>
-                <li class="items-list-skills">React</li>
-                <li class="items-list-skills">Git</li>
-                <li class="items-list-skills">Serverless</li>
-                <li class="items-list-skills">Chai</li>
-                <li class="items-list-skills">Microservices</li>
-            </ul>
         </section>
 
-        <section id="services">
-            <h2 class="mini-tittle">../Works</h2>
-            <h2 class="tittle">..Services</h2>
-            <hr>
-            <ul id="services-list">
-                <li class="items-list-services">
-                    <div class="infos-services">
-                        <img src="./assets/icons/site.svg" alt="" class="icons-services">
-                        <h3 class="tittle-services">Web Development</h3>
-                    
-                        <p class="description">Crafting responsive, modern, and visually appealing websites tailored to
-                            enhance your online presence, engage your target audience effectively, and ensure seamless
-                            performance across all devices and browsers.</p>
-                    </div>
-                </li>
-                <li class="items-list-services">
-                    <div class="infos-services">
-                        <img src="./assets/icons/software.svg" alt="" class="icons-services">
-                        <h3 class="tittle-services">Software Development</h3>
-                    
-                        <p class="description">Creating custom, high-quality software solutions designed to address your
-                            specific needs, ranging from powerful desktop tools to comprehensive enterprise systems,
-                            delivering reliability and scalability for your operations.</p>
+        <section id="projects">
+            <div id="projects-container">
+                <h2 class="mini-tittle">../Folder</h2>
+                <h2 class="tittle">Projects</h2>
+                <p></p>
+                <hr>
+                <ul class="projects-list">
+                    <li class="items-projects-list">
+                        <div class="container-image1">
+                            <p class="text-definition">Landing Page</p>
+                        </div>
+                        <div class="infos-project">
+                            <div class="texts-project">
 
-                    </div>
-                </li>
-                <li class="items-list-services">
-                    <div class="infos-services">
-                        <img src="./assets/icons/api.png" alt="" class="icons-services">
-                        <h3 class="tittle-services">APIs</h3>
-                    
-                        <p class="description">Implementing automation solutions by developing smart scripts and
-                            advanced tools to eliminate repetitive tasks, optimize operational efficiency, save valuable
-                            time, and significantly boost productivity across your projects.</p>
+                                <h3 class="tittle">Calculadora IPhone</h3>
+                                <p class="text">É um projeto que simula a calculadora de um IPhone no navegador</p>
+                            </div>
+                            <div class="techs">
+                                <p class="text-tech">Sass</p>
+                                <p class="text-tech">Node.js</p>
+                                <p class="text-tech">JavaScript</p>
+                            </div>
+                        </div>
+                        <div class="footer-project">
+                            <a class="git" href="">
+                                <img src="./assets/icons/github2.svg" alt="">
+                                GitHub
+                            </a>
+                            <a href="">
+                                <img src="./assets/icons/rede.png" alt="">Site</a>
+                        </div>
+                    </li>
+                    <li class="items-projects-list">
+                        <div class="container-image2">
+                            <p class="text-definition">Landing Page</p>
+                        </div>
+                        <div class="infos-project">
+                            <div class="texts-project">
+                                <h3 class="tittle">Portfólio</h3>
+                                <p class="text">Meu Portfólio para mostrar um
+                                    pouco da minha bagagem profissional</p>
+                            </div>
+                            <div class="techs">
+                                <p class="text-tech">HTML5</p>
+                                <p class="text-tech">CSS3</p>
+                                <p class="text-tech">JavaScript</p>
+                            </div>
+                        </div>
+                        <div class="footer-project">
+                            <a class="git" href="">
+                                <img src="./assets/icons/github2.svg" alt="">
+                                GitHub
+                            </a>
+                            <a href="">
+                                <img src="./assets/icons/rede.png" alt="">Site</a>
+                        </div>
+                    </li>
+                    <li class="items-projects-list">
+                        <div class="container-image3">
+                            <p class="text-definition">Landing Page</p>
+                        </div>
+                        <div class="infos-project">
+                            <div class="texts-project">
 
-                    </div>
-                </li>
-                <li class="items-list-services">
-                    <div class="infos-services">
-                        <img src="./assets/icons/mobile.svg" alt="" class="icons-services">
-                        <h3 class="tittle-services">Mobile Apps</h3>
-                    
-                        <p class="description">Developing user-friendly and innovative mobile applications for both
-                            Android and iOS platforms, transforming your ideas into fully functional, engaging solutions
-                            that users can access anytime, anywhere on their devices.</p>
+                                <h3 class="tittle">Calculadora IPhone</h3>
+                                <p class="text">É um projeto que simula a calculadora de um IPhone no navegador</p>
+                            </div>
+                            <div class="techs">
+                                <p class="text-tech">Sass</p>
+                                <p class="text-tech">Node.js</p>
+                                <p class="text-tech">JavaScript</p>
+                            </div>
+                        </div>
+                        <div class="footer-project">
+                            <a class="git" href="">
+                                <img src="./assets/icons/github2.svg" alt="">
+                                GitHub
+                            </a>
+                            <a href="">
+                                <img src="./assets/icons/rede.png" alt="">Site</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-                    </div>
-                </li>
-                <li class="items-list-services">
-                    <div class="infos-services">
-                        <img src="./assets/icons//automation.png" alt="" class="icons-services">
-                        <h3 class="tittle-services">Automation</h3>
-                        <p class="description">Designing, developing, and integrating robust and secure APIs to connect
-                            disparate systems, enhance application functionality, and enable seamless, real-time data
-                            exchange tailored to your technical requirements.</p>
-                    </div>
-                </li>
-                <li class="items-list-services">
-                    <div class="infos-services">
-                        <img src="./assets/icons/crud.svg" alt="" class="icons-services">
-                        <h3 class="tittle-services">CRUD Apps</h3>
-                    
-                        <p class="description">Designing and building highly efficient applications focused on creating,
-                            reading, updating, and deleting data, customized to streamline your business processes and
-                            improve workflow management with intuitive interfaces.</p>
-                    </div>
-                </li>
-            </ul>
+        <section id="form-email">
+            <div id="form-email-container">
+                <div class="texts">
+                    <h2 class="tittle">Send a message</h2>
+                    <p class="text">I am always open to new projects and work opportunities. If you have an idea or
+                        project in mind, please contact me</p>
+                </div>
+                <div class="container-form">
+                    <form id="form" action="submit">
+                        <input class="input-form" type="text" placeholder="Name">
+                        <input class="input-form" type="email" placeholder="Email">
+                        <input class="input-form" type="tel" placeholder="Phone Number">
+                        <textarea name="Message" id="msg" class="input-form" placeholder="Text your message"></textarea>
+                        <button>Submit</button>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer id="footer">
-        <div class="contact-container">
-            <p class="text">Conecte-se comigo nas redes sociais</p>
-            <div class="container-icons">
-                <a href="https://www.instagram.com/rmssgabriel/" class="">
-                    <img src="./assets/icons/instagram.svg" alt="Icone do instagram">
-                </a>
-                <a href="https://www.linkedin.com/in/gabriel-ramos-a4524526a" class="">
-                    <img src="./assets/icons/linkdn.svg" alt="Icone do linkedIn">
-                </a>
-                <a href="https://github.com/gabrieltech88" class="">
-                    <img src="./assets/icons/github.svg" alt="Icone do GitHub">
-                </a>
-                <a href="https://wa.me/13997209208?text=Oi vim do seu Portfolio, quero falar com você!" class="">
-                    <img src="./assets/icons/wpp.svg" alt="Icone do Whatsapp">
-                </a>
+        <div>
+
+            <section class="second-footer">
+                <div>
+                    <h3>Gabriel <span>Ramos</span></h3>
+                    <p>Bulding modern applications in the front and back-end</p>
+                </div>
+                <div>
+                    <h3>Fast Links</h3>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Contact</h3>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </section>
+            <hr>
+            <div class="contact-container">
+                <div class="container-icons">
+                    <a href="https://www.instagram.com/rmssgabriel/" class="">
+                        <img src="./assets/icons/instagram.svg" alt="Icone do instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/gabriel-ramos-a4524526a" class="">
+                        <img src="./assets/icons/linkdn.svg" alt="Icone do linkedIn">
+                    </a>
+                    <a href="https://github.com/gabrieltech88" class="">
+                        <img src="./assets/icons/github.svg" alt="Icone do GitHub">
+                    </a>
+                    <a href="https://wa.me/13997209208?text=Oi vim do seu Portfolio, quero falar com você!" class="">
+                        <img src="./assets/icons/wpp.svg" alt="Icone do Whatsapp">
+                    </a>
+                </div>
+                <p>© 2025 Gabriel Ramos. Todos os direitos reservados. </p>
             </div>
         </div>
-        <section class="second-footer">
-            <div class="main-footer">
-                <p>Gabriel Ramos - Copyright © 2025</p>
-                <a href="./pages/pp.html " class="pp">Política de Privacidade</a>
-            </div>
-            <div class="main-second-footer">
-                <p>Desenvolvido Por: Gabriel Ramos</p>
-            </div>
-        </section>
     </footer>
 </body>
 

@@ -12,48 +12,6 @@
 }
 
 #footer {
-    margin-top: 64px;
     width: 100%;
-}
-
-.contact-container {
-    background-color: var(--orange-secondary);
-    display: flex;
-    font-family: var(--kodchasan);
-    align-items: center;
-    justify-content: space-around;
-    gap: 32px;
-    padding: 14px;
-}
-
-.container-icons {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-}
-
-.main-footer {
-    display: flex;
-    font-family: var(--jockey);
-    flex-direction: column;
-    height: 121px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-
-}
-
-.main-footer .pp {
-    text-decoration: none;
-    color: white;
-}
-
-.main-second-footer {
-    font-family: var(--kodchasan);
-    font-size: 12px;
-    background-color: var(--orange-secondary);
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: linear-gradient(to bottom, #282929 0%, black 100%); 
 }
