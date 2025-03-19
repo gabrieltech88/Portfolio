@@ -1,0 +1,13 @@
+{
+    "en": { 
+        "apresentacao": "Bulding modern applications in the front and back-end",
+        "aboutTextOne": "Hello! I am a Computer Engineering student and I am passionate about developing solutions. As a Full-Stack developer, I have experience in Node.js, .NET Core, TailwindCSS, Nest.js and SQL and NoSQL databases, but my goal is to become a complete Full-Stack developer using React and Serverless.",
+        "aboutTextTwo": "My experience spans multiple technologies, including HTML, CSS, JavaScript, Node, React, C#, and Nest.js. I use these tools to create robust, intuitive, and responsive solutions, always seeking the best user experience."
+    },
+   "pt": {
+        "apresentacao": "Construindo aplicações modernas no front e back-end",
+        "aboutTextOne": "Olá! Sou estudante de Engenharia da Computação e sou apaixonado por desenvolver soluções. Como desenvolvedor Full-Stack, tenho experiência em Node.js, .NET Core, TailwindCSS, Nest.js e bancos de dados SQL e NoSQL, mas meu objetivo é me tornar um desenvolvedor Full-Stack completo usando React e Serverless.",
+        "aboutTextTwo": "My experience spans multiple technologies, including HTML, CSS, JavaScript, Node, React, C#, and Nest.js. I use these tools to create robust, intuitive, and responsive solutions, always seeking the best user experience."
+    }
+}
+
