@@ -99,7 +99,7 @@ body {
 }
 
 [trans="en"] {
-    background-image: url(../assets/icons/17821510541536065017.svg);
+    background-image: url(../assets/icons/states.svg);
     background-repeat: no-repeat;
     background-size:cover;
 }
@@ -132,17 +132,30 @@ body {
     color: aliceblue;
 }
 
-#second-header button {
+#second-header .button {
     width: 30px;
     height: 30px;
     border-radius: 50%;
     background-color: transparent;
+    margin-left: 0;
+    transition: left 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
 }
 
+#button-container {
+    width: 60px;
+    border-radius: 15px;
+    background-color: #555555;
+    position: relative;
+}
 
 
 #Layer_1 {
     fill: aliceblue;
+}
+
+@keyframes toogle {
+    
 }
 
 @media (max-width: 500px) {
@@ -156,6 +169,17 @@ body {
 
     #header {
         font-size: 14px;
+        padding: 10px;
+    }
+
+    .link-header {
+        font-size: 14px;
+    }
+
+    #second-header {
+        width: 20%;
+        position: fixed;
+        z-index: 1000;
     }
 
 }

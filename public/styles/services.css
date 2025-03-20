@@ -41,6 +41,9 @@
     border-radius: 16px;
     height: 200px;
     border: 2px solid #5a5959;
+    opacity: 0; /* Inicialmente invisível */
+    transform: translateY(20px); /* Começa levemente para baixo */
+    transition: opacity 0.3s ease, transform 0.5s ease;
     
 }
 
@@ -90,3 +93,25 @@
 .items-list-services:hover .description {
     color: #232323;
 }
+
+.service-card.show {
+    opacity: 1;
+    transform: translateY(0); /* Card se move para sua posição original */
+  }
+  
+  /* Pode adicionar mais animações ou efeitos, como um zoom suave */
+  .service-card[data-aos="fade-up"] {
+    animation: fadeInUp 0.8s ease-in-out forwards;
+  }
+  
+  /* Animação personalizada para o efeito de fade-up */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
