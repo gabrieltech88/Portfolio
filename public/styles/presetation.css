@@ -73,15 +73,24 @@ main {
     white-space: nowrap; 
     overflow: hidden;
     width: 0; 
-    animation: digitar 3s steps(20) 1s forwards, cursor 0.8s step-end infinite;
+    animation: digitar 10s steps(20) infinite, cursor 0.8s step-end infinite;
 }
 
 @keyframes digitar {
-    from {
+    0% {
       width: 0;
     }
-    to {
+    25% {
+        width: 0;
+    }
+    50% {
       width: 66%;
+    } 
+    75% {
+        width: 66%;  /* Mantém o texto visível no 50% até 75% (pausa) */
+    }
+    100% {
+        width: 0;
     }
 }
 
@@ -90,4 +99,5 @@ main {
       border-color: transparent; 
     }
 }
+
 

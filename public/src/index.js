@@ -11,10 +11,8 @@ translate.addEventListener("click", async () => {
         document.getElementById("aboutTextOne").innerText = idioma.pt.aboutTextOne
         document.getElementById("aboutTextTwo").innerText = idioma.pt.aboutTextTwo
         document.getElementById("keySkills").innerText = idioma.pt.keySkills
-        document.getElementById("miniTittleOne").innerText = idioma.pt.miniTittleOne
         document.getElementById("mySkills").innerText = idioma.pt.mySkills
         document.getElementById("skillsText").innerText = idioma.pt.skillsText
-        document.getElementById("miniTittleTwo").innerText = idioma.pt.miniTittleTwo
         document.getElementById("myServices").innerText = idioma.pt.myServices
         document.getElementById("descricaoOne").innerText = idioma.pt.descricaoOne
         document.getElementById("descricaoTwo").innerText = idioma.pt.descricaoTwo
@@ -22,10 +20,10 @@ translate.addEventListener("click", async () => {
         document.getElementById("descricaoFour").innerText = idioma.pt.descricaoFour
         document.getElementById("descricaoFive").innerText = idioma.pt.descricaoFive
         document.getElementById("descricaoSix").innerText = idioma.pt.descricaoSix
-        document.getElementById("miniTittleThree").innerText = idioma.pt.miniTittleThree
         document.getElementById("myProjects").innerText = idioma.pt.myProjects
         document.getElementById("sendMessage").innerText = idioma.pt.sendMessage
         document.getElementById("textMessage").innerText = idioma.pt.textMessage
+        document.getElementById("aboutTittle").innerText = idioma.pt.aboutTittle
 
         
         
@@ -36,10 +34,8 @@ translate.addEventListener("click", async () => {
         document.getElementById("aboutTextOne").innerText = idioma.en.aboutTextOne
         document.getElementById("aboutTextTwo").innerText = idioma.en.aboutTextTwo
         document.getElementById("keySkills").innerText = idioma.en.keySkills
-        document.getElementById("miniTittleOne").innerText = idioma.en.miniTittleOne
         document.getElementById("mySkills").innerText = idioma.en.mySkills
         document.getElementById("skillsText").innerText = idioma.en.skillsText
-        document.getElementById("miniTittleTwo").innerText = idioma.en.miniTittleTwo
         document.getElementById("myServices").innerText = idioma.en.myServices
         document.getElementById("descricaoOne").innerText = idioma.en.descricaoOne
         document.getElementById("descricaoTwo").innerText = idioma.en.descricaoTwo
@@ -47,10 +43,10 @@ translate.addEventListener("click", async () => {
         document.getElementById("descricaoFour").innerText = idioma.en.descricaoFour
         document.getElementById("descricaoFive").innerText = idioma.en.descricaoFive
         document.getElementById("descricaoSix").innerText = idioma.en.descricaoSix
-        document.getElementById("miniTittleThree").innerText = idioma.en.miniTittleThree
         document.getElementById("myProjects").innerText = idioma.en.myProjects
         document.getElementById("sendMessage").innerText = idioma.en.sendMessage
         document.getElementById("textMessage").innerText = idioma.en.textMessage
+        document.getElementById("aboutTittle").innerText = idioma.en.aboutTittle
     }
 }) 
 
