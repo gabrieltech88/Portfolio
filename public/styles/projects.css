@@ -1,0 +1,157 @@
+:root {
+    --backgroud: #383837;
+    --orange-primary: #F38F00 ;
+    --orange-secondary: #E57600;
+    --montserrat: 'Montserrat', serif;
+    --inter: 'Inter', serif;
+    --spartan: 'League Spartan', serif;
+    --kodchasan: 'Kodchasan', serif;
+    --josefin: 'Josefin Sans', serif;
+    --jockey: 'Jockey One', serif;
+
+}
+
+#projects {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: linear-gradient(to bottom, #292929 10%, #292929 90%);
+}
+
+#projects-container {
+    display: flex;
+    margin-bottom: 110px;
+    margin-top: 110px;
+    width: 75%;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+    justify-content: center;
+}
+
+.items-projects-list {
+    display: flex;
+    background-color: var(--backgroud);
+    flex-direction: column;
+    gap: 20px;
+    height: 400px;
+    border-radius: 25px;
+}
+
+.items-projects-list .container-image1 {
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    height: 50%;
+    background-image: url('../assets/images/calculadora.png');
+    background-size: cover;  /* A imagem cobre toda a área, mantendo a proporção */
+    background-position: center;  /* A imagem será centralizada */
+}
+
+.items-projects-list .container-image2 {
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    height: 50%;
+    background-image: url('../assets/images/portifolio.png');
+    background-size: cover;  /* A imagem cobre toda a área, mantendo a proporção */
+    background-position: center;  /* A imagem será centralizada */
+}
+
+.items-projects-list .container-image3 {
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    height: 50%;
+    background-image: url('../assets/images/calculadora.png');
+    background-size: cover;  /* A imagem cobre toda a área, mantendo a proporção */
+    background-position: center;  /* A imagem será centralizada */
+}
+
+.text-definition {
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 10px;
+    padding: 3px;
+    font-family: var(--spartan);
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 10px;;
+    width: fit-content
+}
+
+.infos-project {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+}
+
+.techs {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.text-tech {
+    align-items: center;
+    justify-content: center;
+    background-color: var(--orange-primary);
+    border-radius: 15px;
+    padding: 7px;
+    font-family: var(--spartan);
+    font-size: 12px;
+    text-align: center;
+    line-height: normal;
+}
+
+
+.footer-project {
+    background-color: #575656;
+    display: flex;
+    justify-content: space-around;
+    padding: 8px;
+    border-top: 1px solid var(--orange-secondary);
+    margin-top: auto;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.footer-project a {
+    display: flex;
+    gap: 5px;
+    text-decoration: none;
+    color: white;
+    background-color: var(--orange-primary);
+    padding: 5px;
+    border-radius: 5px;
+    font-family: var(--spartan);
+    font-size: 12px;
+    align-items: center;
+}
+
+.footer-project .git {
+    background-color: #151515;
+}
+
+.footer-project a img {
+    width: 16px;
+}
+
+.infos-project .tittle {
+    font-size: 24px;
+}
+
+
+.infos-project .text {
+    font-size: 14px;
+    width: 80%;
+    
+}
+
+.texts-project {
+    margin-left: 20px;
+}
+

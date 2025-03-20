@@ -19,12 +19,8 @@ main {
 
 #presetation-container {
     display: flex;
-    justify-content: center;
-    margin-top: 32px;
-    align-items: center;
-    margin-right: 50px;
-    background: linear-gradient(45deg, var(--orange-primary), #ff5500);
-    width: 100%;
+    margin-top: 64px;
+    width: 75%;
     padding: 15px;
 }
 
@@ -49,7 +45,7 @@ main {
 
 .infos-container .text-presetation {
     font-family: var(--kodchasan);
-    color: var(--backgroud);
+    font-size: 13px;
 }
 
 #icons-container {
@@ -69,3 +65,39 @@ main {
 #image-presentation {
     height: 179px;
 }
+
+.digitar {
+    font-family: "Courier New", Courier, monospace; 
+    font-size: 2em;
+    border-right: 0.1em solid white; 
+    white-space: nowrap; 
+    overflow: hidden;
+    width: 0; 
+    animation: digitar 10s steps(20) infinite, cursor 0.8s step-end infinite;
+}
+
+@keyframes digitar {
+    0% {
+      width: 0;
+    }
+    25% {
+        width: 0;
+    }
+    50% {
+      width: 66%;
+    } 
+    75% {
+        width: 66%;  /* Mantém o texto visível no 50% até 75% (pausa) */
+    }
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes cursor {
+    50% {
+      border-color: transparent; 
+    }
+}
+
+

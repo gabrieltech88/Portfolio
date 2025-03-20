@@ -1,0 +1,60 @@
+:root {
+    --backgroud: #383837;
+    --orange-primary: #F38F00 ;
+    --orange-secondary: #E57600;
+    --montserrat: 'Montserrat', serif;
+    --inter: 'Inter', serif;
+    --spartan: 'League Spartan', serif;
+    --kodchasan: 'Kodchasan', serif;
+    --josefin: 'Josefin Sans', serif;
+    --jockey: 'Jockey One', serif;
+
+}
+
+#skills {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to bottom, #292929 10%, #292929 90%);
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 110px;
+    gap: 20px;
+    width: 75%;
+    margin-bottom: 110px;
+}
+
+hr {
+    background-color: #5a5959;
+    height: 2px;
+    border: none;
+    width: 100%;
+}
+
+.text {
+    font-family: var(--spartan);
+    margin-top: 8px;
+}
+
+#skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+.items-list-skills {
+    background-color: #151515;
+    border-radius: 7px;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    font-size: 14px;
+    font-family: var(--spartan);
+}
+
+.items-list-skills:hover {
+    background-color: #5a5959;
+}

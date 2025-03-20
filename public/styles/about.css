@@ -11,16 +11,28 @@
 
 }
 
-#aboutme {
-    width: 70%;
+main {
+    margin-top: 60px;
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to top, #282929 0%, #383837 30%); 
+}
+
+#about-container {
+    width: 75%;
     display: grid;
     margin-top: 64px;
-
     grid-template-columns: auto 1fr;
     justify-content: center;
     align-items: center;
     gap: 64px;
+    margin-bottom: 18px;
 }
+
+
 
 .about {
     display: flex;
@@ -46,6 +58,7 @@
     font-size: 16px;
     gap: 10px;
     font-family: var(--kodchasan);
+    font-weight: 300;
 }
 
 .tittle-key {
@@ -68,9 +81,14 @@
     background-color: var(--orange-primary);
     padding: 10px;
     border-radius: 18px;
-    text-align: center;
     font-size: 16px;
     font-weight: 500;
+    display: flex;
+    justify-content: center;
+}
+
+.keys-list .items-list p {
+    line-height: normal;
 }
 
 #image-presentation {
@@ -86,21 +104,3 @@
     width: 80%;
 }
 
-.skills-container {
-    display: flex;
-    flex-direction: column;
-    margin-top: 128px;
-    gap: 20px;
-    width: 70%;
-}
-
-hr {
-    background-color: #5a5959;
-    height: 2px;
-    border: none;
-    width: 100%;
-}
-
-.text {
-    font-family: var(--spartan);
-}

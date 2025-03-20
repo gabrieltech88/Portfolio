@@ -12,6 +12,10 @@
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--backgroud);
     height: 100vh;
@@ -30,9 +34,11 @@ body {
     font-family: var(--jockey);
     font-size: 22px;
     margin-top: 16px;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 40px;
     padding: 5px;
+    position: fixed;
+    z-index: 1000;
 }
 
 .navigation-header {
@@ -90,4 +96,51 @@ body {
 
 #header .navigation-header #icons-container .icons:hover {
     color: var(--orange-primary);
+}
+
+[trans="en"] {
+    background-image: url(../assets/icons/17821510541536065017.svg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+[trans="pt"] {
+    background-image: url(../assets/icons/1595219911626933815.svg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#second-header {
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    position: fixed;
+    z-index: 1000;
+    width: 10%;
+    border-radius: 40px;
+    margin-bottom: 16px;
+    padding: 10px;
+}
+
+#second-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+#second-nav p {
+    color: aliceblue;
+}
+
+#second-header button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+
+
+#Layer_1 {
+    fill: aliceblue;
 }
