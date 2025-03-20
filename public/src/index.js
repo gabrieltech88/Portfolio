@@ -9,7 +9,7 @@ translate.addEventListener("click", async function () {
     
         if(translate.getAttribute("trans") == "pt") {
             translate.setAttribute("trans", "en")
-            translate.style.marginLeft = '30px';
+            //translate.style.marginLeft = '30px';
             buttonContainer.style.backgroundColor = '#4CAF50';
             
             document.getElementById("apresentacao").innerText = idioma.pt.apresentacao
@@ -32,7 +32,7 @@ translate.addEventListener("click", async function () {
             
         } else {
             translate.setAttribute("trans", "pt")
-            translate.style.marginLeft = '0px';
+            //translate.style.marginLeft = '0px';
             buttonContainer.style.backgroundColor = '#555555'
             document.getElementById("apresentacao").innerText = idioma.en.apresentacao
             document.getElementById("aboutTextOne").innerText = idioma.en.aboutTextOne

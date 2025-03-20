@@ -99,15 +99,18 @@ body {
 }
 
 [trans="en"] {
+    transform: translateX(30px);
     background-image: url(../assets/icons/states.svg);
     background-repeat: no-repeat;
     background-size:cover;
+    
 }
 
 [trans="pt"] {
     background-image: url(../assets/icons/1595219911626933815.svg);
     background-repeat: no-repeat;
     background-size:cover;
+    
 }
 
 #second-header {
@@ -138,8 +141,8 @@ body {
     border-radius: 50%;
     background-color: transparent;
     margin-left: 0;
-    transition: left 0.3s ease, background-color 0.3s ease;
     cursor: pointer;
+    transition: transform 0.3s ease, background-image 0.3s ease;
 }
 
 #button-container {
