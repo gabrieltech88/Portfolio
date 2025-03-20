@@ -144,3 +144,18 @@ body {
 #Layer_1 {
     fill: aliceblue;
 }
+
+@media (max-width: 500px) {
+    #header #icons-container {
+        display: none;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    #header {
+        font-size: 14px;
+    }
+
+}
