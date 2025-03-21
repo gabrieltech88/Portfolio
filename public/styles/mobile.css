@@ -2,11 +2,30 @@
     #presetation-container {
         display: flex;
         width: 75%;
+        align-items: center;
     }
 
     .infos-container {
+        width: 100%;
+    }
+
+    #about-container {
         display: flex;
         flex-direction: column;
-        gap: 4px;
     }
+
+    .keys-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    #skillsText {
+        width: 75%;
+    }
+
+    #skillsText, #mySkills, #miniTittleOne {
+        margin-left: 30px;
+    }
+
 }

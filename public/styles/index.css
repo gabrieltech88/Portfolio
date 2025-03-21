@@ -35,6 +35,10 @@ body {
     display: none;
 }
 
+#list-menu-burguer {
+    display: none;
+}
+
 /*Header*/
 #header {
     width: 90%;
