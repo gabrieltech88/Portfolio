@@ -84,10 +84,10 @@ main {
         width: 0;
     }
     50% {
-      width: 66%;
+      width: 70%;
     } 
     75% {
-        width: 66%;  /* Mantém o texto visível no 50% até 75% (pausa) */
+        width: 70%;  /* Mantém o texto visível no 50% até 75% (pausa) */
     }
     100% {
         width: 0;

@@ -447,11 +447,11 @@
                 </div>
                 <div class="container-form">
                     <form id="form" action="submit">
-                        <input class="input-form" type="text" placeholder="Name">
-                        <input class="input-form" type="email" placeholder="Email">
-                        <input class="input-form" type="tel" placeholder="Phone Number">
-                        <textarea name="Message" id="msg" class="input-form" placeholder="Text your message"></textarea>
-                        <button id="button">Submit</button>
+                        <input class="input-form" type="text" placeholder="Name" required>
+                        <input class="input-form" type="email" placeholder="Email" required>
+                        <input class="input-form" type="tel" placeholder="Phone Number" required>
+                        <textarea name="Message" id="msg" class="input-form" placeholder="Text your message" required></textarea>
+                        <button id="button-form">Submit</button>
                     </form>
                 </div>
             </div>
@@ -560,6 +560,7 @@
     </header>
 
     <script src="./src/index.js" type="module"></script>
+    <script src="./src/form.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
         AOS.init({
