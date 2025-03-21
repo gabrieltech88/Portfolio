@@ -1,7 +1,7 @@
 @media (max-width: 500px) { 
     #presetation-container {
         display: flex;
-        width: 75%;
+        
         align-items: center;
     }
 
@@ -20,11 +20,11 @@
     }
     
     #skills {
-      width: 75%;
+      
     }
 
     #services {
-        width: 75%;
+        
     }
 
     #services-list {
@@ -33,8 +33,68 @@
     }
 
     .items-list-services {
-        height: 270px;
+        height: 300px;
+    }
+
+    .description {
+        width: 80%;
+    }
+
+    #projects {
+        
+    }
+
+    .projects-list {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        
+    }
+
+    .items-projects-list {
+        height: auto;
+    }
+
+    .items-projects-list .container-image1 {
+        height: 100px;
+    }
+    
+    .items-projects-list .container-image2 {
+        height: 100px;
+    }
+    
+    .items-projects-list .container-image3 {
+        height: 100px;
+    }
+
+    .techs {
+        flex-wrap: wrap;
     }
 
 
+    #form-email-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-form {
+        width: 300px;
+    }
+
+    #form {
+        display: flex;
+        align-items: center;
+    }
+    
+    #button-form {
+        width: 310px;
+    }
+
+    .second-footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .second-footer div {
+        margin-left: 25px;
+    }
 }
