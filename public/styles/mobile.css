@@ -1,0 +1,12 @@
+@media (max-width: 500px) { 
+    #presetation-container {
+        display: flex;
+        width: 75%;
+    }
+
+    .infos-container {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+}

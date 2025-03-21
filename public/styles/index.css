@@ -227,7 +227,7 @@ body {
     }
 
     .menu-toggle:checked + .menu-icon + #nav-burguer {
-        display: block;
+        display: flex;
         margin-top: 107.5px;
         background-color: rgba(0, 0, 0, 0.5);
         width: 100%;
@@ -256,10 +256,10 @@ body {
         display: flex;
     }
     
-    #list-menu-burguer{ 
+    .menu-toggle:checked + #list-menu-burguer{ 
         display: flex;
         flex-direction: column;
-        margin-left: 40px;
+        transform: translateX(100px);
         gap: 8px;
 
     }
