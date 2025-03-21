@@ -26,6 +26,15 @@ body {
     align-items: center;
 }
 
+
+#menu-burguer {
+    display: none;
+}
+
+#nav-burguer {
+    display: none;
+}
+
 /*Header*/
 #header {
     width: 90%;
@@ -157,6 +166,7 @@ body {
     fill: aliceblue;
 }
 
+
 @keyframes toogle {
     
 }
@@ -170,19 +180,75 @@ body {
         display: none;
     }
 
+    .list-header {
+        display: none;
+    }
+
     #header {
-        font-size: 14px;
         padding: 10px;
+        justify-content: center;
     }
 
-    .link-header {
-        font-size: 14px;
+    #menu-burguer {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
     }
 
-    #second-header {
-        width: 20%;
-        position: fixed;
-        z-index: 1000;
+    .menu-toggle {
+        display: none; /* O checkbox fica invisível */
+    }
+    
+   .menu-icon {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+   }
+    
+    .bar {
+        background-color: white;
+        height: 2px;
+        width: 15px;
+        transition: transform 0.6s ease, background-color 0.3s ease;
     }
 
+    #nav-burguer {
+        position: absolute;
+    }
+
+    .menu-toggle:checked + .menu-icon + #nav-burguer {
+        display: block;
+        margin-top: 107.5px;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 30%;
+        left: 30px;
+    
+    }
+    .menu-toggle:checked + .menu-icon {
+        gap: 0px;
+        
+    }
+
+    .menu-toggle:checked + .menu-icon .bar:nth-child(1) {
+        transform: rotate(30deg) translateY(4px);
+        background-color: white;
+    }
+
+    .menu-toggle:checked + .menu-icon .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .menu-toggle:checked + .menu-icon .bar:nth-child(3) {
+        transform: rotate(-30deg) ;
+        background-color: white;
+        
+    }
+    
+    .menu-toggle:checked { 
+        
+    }
+
+    
+    
 }

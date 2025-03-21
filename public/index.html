@@ -27,6 +27,74 @@
 <body>
     <header id="header">
         <nav class="navigation-header">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </label>
+
+            <nav id="nav-burguer">
+
+                <ul id="list-menu-burguer">
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+                </ul>
+                <div id="container-icons-menu-burguer">
+                    <a href="https://www.linkedin.com/in/gabriel-ramos-a4524526a" class="icons">
+                        <svg width="28" height="28" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M28.109 34.4C27.759 34.4 27.474 34.116 27.474 33.766V24.13C27.474 20.646 25.686 20.646 25.012 20.646C23.134 20.646 22.183 21.818 22.183 24.13V33.767C22.183 34.117 21.899 34.401 21.549 34.401H16.1C15.75 34.401 15.466 34.117 15.466 33.767V15.41C15.466 15.06 15.75 14.776 16.1 14.776H21.55C21.9 14.776 22.184 15.06 22.184 15.41V16.094L22.512 15.823C23.802 14.756 25.341 14.215 27.086 14.215C29.243 14.215 31.059 14.904 32.337 16.209C33.687 17.587 34.4 19.639 34.4 22.142V33.767C34.4 34.117 34.115 34.401 33.765 34.401L28.109 34.4ZM25.013 19.376C26.407 19.376 28.745 19.994 28.745 24.13V33.132H33.13V22.142C33.13 17.911 30.927 15.485 27.086 15.485C23.656 15.485 22.17 18.075 22.108 18.185C21.996 18.388 21.784 18.514 21.553 18.514C21.501 18.514 21.448 18.506 21.394 18.493C21.112 18.422 20.915 18.171 20.915 17.883V16.046H16.735V33.133H20.915V24.13C20.915 21.153 22.447 19.376 25.013 19.376Z"
+                                fill="currentColor" />
+                            <path
+                                d="M6.78002 34.4C6.43002 34.4 6.14502 34.116 6.14502 33.766V15.41C6.14502 15.06 6.43002 14.776 6.78002 14.776H12.465C12.815 14.776 13.099 15.06 13.099 15.41V33.766C13.099 34.116 12.815 34.4 12.465 34.4H6.78002ZM7.41502 33.132H11.83V16.045H7.41502V33.132Z"
+                                fill="currentColor" />
+                            <path
+                                d="M9.59701 13.639C7.39301 13.639 5.60001 11.836 5.60001 9.62001C5.60001 7.40301 7.39301 5.60001 9.59701 5.60001C11.798 5.60001 13.59 7.40401 13.59 9.62101C13.59 11.836 11.798 13.639 9.59701 13.639ZM9.59701 6.86601C8.09301 6.86601 6.87001 8.10101 6.87001 9.62001C6.87001 11.138 8.09301 12.371 9.59701 12.371C11.1 12.371 12.322 11.138 12.322 9.62001C12.321 8.10201 11.1 6.86601 9.59701 6.86601Z"
+                                fill="currentColor" />
+                        </svg>
+                    </a>
+                    <a href="https://github.com/gabrieltech88" class="icons">
+                        <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="stroke-current">
+                            <path
+                                d="M12 25.3333C5.33332 27.3333 5.33332 22 2.66666 21.3333M21.3333 29.3333V24.1733C21.3833 23.5375 21.2974 22.8984 21.0813 22.2984C20.8652 21.6984 20.5239 21.1512 20.08 20.6933C24.2667 20.2267 28.6667 18.64 28.6667 11.36C28.6663 9.49843 27.9502 7.70826 26.6667 6.36C27.2745 4.73134 27.2315 2.93113 26.5467 1.33333C26.5467 1.33333 24.9733 0.866665 21.3333 3.30666C18.2773 2.47843 15.056 2.47843 12 3.30666C8.35999 0.866665 6.78666 1.33333 6.78666 1.33333C6.10182 2.93113 6.05885 4.73134 6.66666 6.36C5.37349 7.71826 4.65669 9.52462 4.66666 11.4C4.66666 18.6267 9.06666 20.2133 13.2533 20.7333C12.8147 21.1866 12.4763 21.7272 12.2604 22.3199C12.0445 22.9126 11.9557 23.5441 12 24.1733V29.3333"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/rmssgabriel/" class="icons">
+                        <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="stroke-current">
+                            <g clip-path="url(#clip0_14_276)">
+                                <path
+                                    d="M23 31H9C4.6 31 1 27.4 1 23V9C1 4.6 4.6 1 9 1H23C27.4 1 31 4.6 31 9V23C31 27.4 27.4 31 23 31Z"
+                                    stroke="currentColor" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M16 23C19.866 23 23 19.866 23 16C23 12.134 19.866 9 16 9C12.134 9 9 12.134 9 16C9 19.866 12.134 23 16 23Z"
+                                    stroke="currentColor" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M24 8C24.5523 8 25 7.55228 25 7C25 6.44772 24.5523 6 24 6C23.4477 6 23 6.44772 23 7C23 7.55228 23.4477 8 24 8Z"
+                                    stroke="currentColor" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_14_276">
+                                    <rect width="32" height="32" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+            </nav>
             <div>
                 <p id="text-header">
                     <span class="bold ">GABRIEL </span>RAMOS
@@ -499,7 +567,7 @@
             offset: 200,    // Distância do início da animação até o elemento aparecer
             delay: 100
         });
-        
+
     </script>
     <script src="./src/animationSkills.js"></script>
     <script src="./src/animationServices.js"></script>
