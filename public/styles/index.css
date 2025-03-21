@@ -161,6 +161,10 @@ body {
     position: relative;
 }
 
+#menu-toggle, .menu-icon{
+    display: none;
+}
+
 
 #Layer_1 {
     fill: aliceblue;
@@ -187,6 +191,9 @@ body {
     #header {
         padding: 10px;
         justify-content: center;
+        border-radius: 0;
+        margin-top: 0%;
+        width: 100%;
     }
 
     #menu-burguer {
@@ -214,6 +221,8 @@ body {
     }
 
     #nav-burguer {
+        display: flex;
+        flex-direction: column;
         position: absolute;
     }
 
@@ -221,9 +230,7 @@ body {
         display: block;
         margin-top: 107.5px;
         background-color: rgba(0, 0, 0, 0.5);
-        width: 30%;
-        left: 30px;
-    
+        width: 100%;
     }
     .menu-toggle:checked + .menu-icon {
         gap: 0px;
@@ -244,11 +251,25 @@ body {
         background-color: white;
         
     }
+
+    .menu-toggle:checked + #container-icons-menu-burguer {
+        display: flex;
+    }
     
-    .menu-toggle:checked { 
-        
+    #list-menu-burguer{ 
+        display: flex;
+        flex-direction: column;
+        margin-left: 40px;
+        gap: 8px;
+
     }
 
+    #list-menu-burguer li a {
+        text-decoration: none;
+        color: white;
+        font-family: var(--jockey);
+        font-size: 16px;
+    }
     
     
 }
