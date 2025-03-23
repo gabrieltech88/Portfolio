@@ -1,0 +1,117 @@
+:root {
+    --secondary-backgroud: #383837;
+    --background: #0f0f0f;
+    --orange-primary: #F38F00 ;
+    --orange-secondary: #E57600;
+    --montserrat: 'Montserrat', serif;
+    --inter: 'Inter', serif;
+    --spartan: 'League Spartan', serif;
+    --kodchasan: 'Kodchasan', serif;
+    --josefin: 'Josefin Sans', serif;
+    --jockey: 'Jockey One', serif;
+}
+
+#services {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to bottom, #282929 0%, #383837 20%, #383837 80%, #282929 100%); 
+}
+
+#services-container {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    width: 75%;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+#services-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+    justify-content: center;
+}
+
+.items-list-services {
+    display: flex;
+    flex-direction: column;
+    background-color: #232323;
+    border-radius: 16px;
+    height: 200px;
+    border: 2px solid #5a5959;
+    opacity: 0; /* Inicialmente invisível */
+    transform: translateY(20px); /* Começa levemente para baixo */
+    transition: opacity 0.3s ease, transform 0.5s ease;
+    
+}
+
+.icons-services {
+    width: 22px;
+    height: 22px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.tittle-services {
+    font-family: var(--jockey);
+    color: var(--orange-primary);
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.text-container {
+    display: flex;
+    width: 80%;
+    align-items: center;
+}
+
+.infos-services {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 12px;
+}
+
+.description {
+    margin-left: 15px;
+    font-family: var(--spartan);
+    font-size: 14px;
+    color: #abaaaa;
+    width: 90%;
+}
+
+.items-list-services:hover {
+    background-color: var(--orange-primary);
+}
+
+.items-list-services:hover .tittle-services{
+    color: white;
+}
+
+.items-list-services:hover .description {
+    color: #232323;
+}
+
+.service-card.show {
+    opacity: 1;
+    transform: translateY(0); /* Card se move para sua posição original */
+  }
+  
+  /* Pode adicionar mais animações ou efeitos, como um zoom suave */
+  .service-card[data-aos="fade-up"] {
+    animation: fadeInUp 0.8s ease-in-out forwards;
+  }
+  
+  /* Animação personalizada para o efeito de fade-up */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

@@ -97,4 +97,35 @@
     .second-footer div {
         margin-left: 25px;
     }
+
+    #second-header {
+        width: 30%;
+    }
+
+    #aboutTextOne, #aboutTextTwo {
+        width: 100%;
+    }
+
+    .infos-container .text-presetation {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    @keyframes digitar {
+        0% {
+          width: 0;
+        }
+        25% {
+            width: 0;
+        }
+        50% {
+          width: 100%;
+        } 
+        75% {
+            width: 100%;  /* Mantém o texto visível no 50% até 75% (pausa) */
+        }
+        100% {
+            width: 0;
+        }
+    }
 }
