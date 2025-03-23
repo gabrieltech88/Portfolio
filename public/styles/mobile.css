@@ -106,26 +106,11 @@
         width: 100%;
     }
 
-    .infos-container .text-presetation {
+    .container-text-presen {
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
+        max-width: 100%;
     }
 
-    @keyframes digitar {
-        0% {
-          width: 0;
-        }
-        25% {
-            width: 0;
-        }
-        50% {
-          width: 100%;
-        } 
-        75% {
-            width: 100%;  /* Mantém o texto visível no 50% até 75% (pausa) */
-        }
-        100% {
-            width: 0;
-        }
-    }
 }
