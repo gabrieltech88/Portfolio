@@ -174,7 +174,8 @@
                         <div>
                             <h2 class="mini-tittle">Full-Stack Developer</h2>
                             <div class="container-text-presen">
-                                <p class="text-presetation digitar" id="apresentacao">Bulding modern applications in the front and
+                                <p class="text-presetation digitar" id="apresentacao">Bulding modern applications in the
+                                    front and
                                     back-end</p>
                             </div>
                         </div>
@@ -359,19 +360,19 @@
                             <div class="texts-project">
                                 <p class="text">Meu Portfólio para mostrar um
                                     pouco da minha bagagem profissional</p>
-                                    <div class="techs">
-                                        <p class="text-tech">HTML5</p>
-                                        <p class="text-tech">CSS3</p>
-                                        <p class="text-tech">JavaScript</p>
-                                    </div>
-                                    <div class="footer-project">
-                                        <a class="git" href="https://github.com/gabrieltech88/Portfolio">
-                                            <img src="./assets/icons/github2.svg" alt="">
-                                            GitHub
-                                        </a>
-                                        <a href="https://devgabrielramos.vercel.app/">
-                                            <img src="./assets/icons/rede.png" alt="">Site</a>
-                                    </div>
+                                <div class="techs">
+                                    <p class="text-tech">HTML5</p>
+                                    <p class="text-tech">CSS3</p>
+                                    <p class="text-tech">JavaScript</p>
+                                </div>
+                                <div class="footer-project">
+                                    <a class="git" href="https://github.com/gabrieltech88/Portfolio">
+                                        <img src="./assets/icons/github2.svg" alt="">
+                                        GitHub
+                                    </a>
+                                    <a href="https://devgabrielramos.vercel.app/">
+                                        <img src="./assets/icons/rede.png" alt="">Site</a>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -413,12 +414,12 @@
                 </div>
                 <div class="container-form">
                     <form id="form" action="submit">
-                        <input class="input-form" type="text" placeholder="Name" required>
-                        <input class="input-form" type="email" placeholder="Email" required>
-                        <input class="input-form" type="tel" placeholder="Phone Number" required>
-                        <textarea name="Message" id="msg" class="input-form" placeholder="Text your message"
-                            required></textarea>
-                        <button id="button-form">Submit</button>
+                        <input name="name" class="input-form" type="text" placeholder="Name" required>
+                        <input name="email" class="input-form" type="email" placeholder="Email" required>
+                        <input name="number" class="input-form" type="tel" placeholder="Phone Number" required>
+                        <input type="text" name="message" id="msg" class="input-form" placeholder="Text your message"
+                            required></input>
+                        <button id="button-form" type="submit">Submit</button>
                     </form>
                 </div>
             </div>
@@ -539,6 +540,24 @@
     </script>
     <script src="./src/animationSkills.js"></script>
     <script src="./src/animationServices.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        // Inicializa o EmailJS com sua Public Key
+        emailjs.init("WwDOUn87Y8njQjWLd"); // Ex: 'kDjxA7k...XYZ'
+
+        document.getElementById('form').addEventListener('submit', function (e) {
+            e.preventDefault(); // evita reload
+
+            emailjs.sendForm('service_9ofuayu', 'template_it4jzmh', this)
+                .then(() => {
+                    alert('Email enviado com sucesso!');
+                    this.reset();
+                }, (error) => {
+                    alert('Erro ao enviar o email. Tente novamente.');
+                    console.error(error);
+                });
+        });
+    </script>
 </body>
 
 </html>
