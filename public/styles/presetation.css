@@ -1,7 +1,6 @@
 :root {
-    --backgroud: #383837;
-    --orange-primary: #F38F00 ;
-    --orange-secondary: #E57600;
+    --background: #14161a;
+    --orange-primary: #f06d0d;
     --montserrat: 'Montserrat', serif;
     --inter: 'Inter', serif;
     --spartan: 'League Spartan', serif;
@@ -11,6 +10,8 @@
 
 }
 
+/*CONTAINERS*/
+
 main {
     display: flex;
     flex-direction: column;
@@ -19,29 +20,69 @@ main {
 
 #presetation-container {
     display: flex;
-    margin-top: 64px;
-    width: 75%;
+    background-color: #14161a;
+    margin-top: 60px;
+    height: auto;
+    width: 100%;
     padding: 15px;
+    margin-bottom: 60px;
+}
+
+.secondary-container {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    background-color: #14161a;
 }
 
 .infos-container {
     width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 15px;
 }
+
+.part1 {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
 
 .infos-container .mini-tittle {
     font-family: var(--spartan);
-    font-weight: 600;   
-    font-size: 32px;
+    font-weight: 600;
+    font-size: 28px;
 }
 
 .infos-container .tittle {
     font-family: var(--jockey);
-    font-size: 48px;
-    
+    font-size: 56px;
+
 }
+
+#miniTittleAbout {
+    font-family: var(--jockey);
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 12px;
+
+}
+
+#aboutTextOne, #aboutTextTwo {
+    color: #a1a1a1;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    font-size: 16px;
+    gap: 10px;
+    font-family: var(--kodchasan);
+    font-weight: 300;
+}
+
 
 .infos-container .text-presetation {
     font-family: var(--kodchasan);
@@ -54,6 +95,11 @@ main {
     margin-top: 12px;
 }
 
+.buttons {
+    display: flex;
+    gap: 10px;;
+}
+
 #icons-container .icons {
     color: var(--backgroud);
 }
@@ -62,33 +108,35 @@ main {
     color: var(--orange-primary)
 }
 
-#image-presentation {
-    height: 179px;
-}
 
 .digitar {
-    font-family: "Courier New", Courier, monospace; 
+    font-family: "Courier New", Courier, monospace;
     font-size: 2em;
-    border-right: 0.1em solid white; 
-    white-space: nowrap; 
+    border-right: 0.1em solid white;
+    white-space: nowrap;
     overflow: hidden;
-    width: 0; 
+    width: 0;
     animation: digitar 6s steps(20) infinite, cursor 0.8s step-end infinite;
 }
 
 @keyframes digitar {
     0% {
-      width: 0;
+        width: 0;
     }
+
     25% {
         width: 0;
     }
+
     50% {
-      width: 70%;
-    } 
-    75% {
-        width: 70%;  /* Mantém o texto visível no 50% até 75% (pausa) */
+        width: 70%;
     }
+
+    75% {
+        width: 70%;
+        /* Mantém o texto visível no 50% até 75% (pausa) */
+    }
+
     100% {
         width: 0;
     }
@@ -96,7 +144,35 @@ main {
 
 @keyframes cursor {
     50% {
-      border-color: transparent; 
+        border-color: transparent;
     }
 }
 
+.btn-presentation {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: var(--inter);
+    font-weight: 600;
+    border: 1.5px solid var(--orange-secondary);
+    color: #fff;
+    background-color: var(--orange-primary);
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.btn-presentation:nth-child(2) {
+    background-color: transparent;
+    color: var(--orange-primary);
+
+}
+
+.btn-presentation:nth-child(2):hover {
+    background-color: var(--orange-primary);
+    color: hsla(220 13% 9%);
+}
+
+.text-btn-presentation {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

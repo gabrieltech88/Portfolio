@@ -1,6 +1,6 @@
 :root {
-    --backgroud: #383837;
-    --orange-primary: #F38F00 ;
+    --background: #383837;
+    --orange-primary: #f06d0d; 
     --orange-secondary: #E57600;
     --montserrat: 'Montserrat', serif;
     --inter: 'Inter', serif;
@@ -13,7 +13,7 @@
 
 #footer {
     width: 100%;
-    background: linear-gradient(to bottom, #292929, #000000);
+    background-color: #14161a;
     
 }
 

@@ -1,7 +1,7 @@
 :root {
-    --secondary-backgroud: #383837;
+    --secondary-backgroud: #14161a;
     --background: #0f0f0f;
-    --orange-primary: #F38F00 ;
+    --orange-primary: #f06d0d; 
     --orange-secondary: #E57600;
     --montserrat: 'Montserrat', serif;
     --inter: 'Inter', serif;
@@ -17,13 +17,19 @@ html {
 }
 
 body {
-    background-color: var(--backgroud);
+    background-color: #14161a;
     height: 100vh;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     color: white;
     align-items: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--orange-primary);
 }
 
 

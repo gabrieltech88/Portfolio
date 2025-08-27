@@ -1,6 +1,6 @@
 :root {
-    --backgroud: #383837;
-    --orange-primary: #F38F00 ;
+    --dark-gradient: linear-gradient(135deg, hsl(220 13% 11%), hsl(220 13% 15%));
+    --orange-primary: #f06d0d ;
     --orange-secondary: #E57600;
     --montserrat: 'Montserrat', serif;
     --inter: 'Inter', serif;
@@ -14,15 +14,16 @@
 #form-email {
     display: flex;
     width: 100%;
-    justify-content: center;
-    background: linear-gradient(to bottom, #282929 0%, #383837 20%, #383837 80%, #282929 100%); 
+    background-color: hsl(220 13% 15%);
 }
 
 #form-email-container {
+    margin-top: 60px;
     display: flex;
-    width: 75%;
+    width: 90%;
     gap: 40px;
-    text-align: center;
+    text-align: left;
+    margin-bottom: 60px;
 }
 
 #form {

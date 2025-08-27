@@ -12,8 +12,8 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./dist/reset.css">
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/all.css">
     <link rel="stylesheet" href="./styles/presetation.css">
-    <link rel="stylesheet" href="./styles/about.css">
     <link rel="stylesheet" href="./styles/skills.css">
     <link rel="stylesheet" href="./styles/services.css">
     <link rel="stylesheet" href="./styles/projects.css">
@@ -164,26 +164,22 @@
 
     <main>
         <section id="presetation-container">
-            <div class="infos-container">
-                <h1 class="tittle">Gabriel Ramos</h1>
-                <h2 class="mini-tittle">Full-Stack Developer</h2>
-                <div class="container-text-presen">
-                    <p class="text-presetation digitar" id="apresentacao">Bulding modern applications in the front and
-                        back-end</p>
-                </div>
-        </section>
-
-        <section id="about">
-            <div id="about-container">
-                <div class="about">
-                    <h2 class="mini-tittle" id="miniTittleAbout">../About</h2>
-                    <h2 class="tittle" id="aboutTittle">About me</h2>
-                    <div>
-                        <img src="./assets/images/photoTeste.png" alt="" id="image-presentation">
+            <div class="secondary-container">
+                <div class="infos-container">
+                    <div class="part1">
+                        <div>
+                            <h2 class="mini-tittle" id="miniTittleAbout">../About</h2>
+                            <h1 class="tittle">Gabriel Ramos</h1>
+                        </div>
+                        <div>
+                            <h2 class="mini-tittle">Full-Stack Developer</h2>
+                            <div class="container-text-presen">
+                                <p class="text-presetation digitar" id="apresentacao">Bulding modern applications in the front and
+                                    back-end</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="text-container">
-                    <div class="texts">
+                    <div class="text-btn-presentation">
                         <p class="text" id="aboutTextOne">
                             Hello! I am a Computer Engineering student and I am passionate about developing solutions.
                             As a Full-Stack developer, I have experience in Node.js, .NET Core, TailwindCSS, Nest.js and
@@ -198,29 +194,16 @@
                             React,
                             C#, and Nest.js. I use these tools to create robust, intuitive, and responsive solutions,
                             always
-                            seeking the best user experience.</p>
+                            seeking the best user experience.
+                        </p>
                     </div>
-                    <h2 class="tittle-key" id="keySkills">Key Skills</h2>
-                    <ul class="keys-list">
-                        <li class="items-list">
-                            <p>JavaScript</p>
-                        </li>
-                        <li class="items-list">
-                            <p>Node.js</p>
-                        </li>
-                        <li class="items-list">
-                            <p>.NET</p>
-                        </li>
-                        <li class="items-list">
-                            <p>Nest.js</p>
-                        </li>
-                        <li class="items-list">
-                            <p>React</p>
-                        </li>
-                        <li class="items-list">
-                            <p>Linux</p>
-                        </li>
-                    </ul>
+                    <div class="buttons">
+                        <a class="btn-presentation" href="#projects">Ver projetos</a>
+                        <a class="btn-presentation">Fale Comigo</a>
+                    </div>
+                </div>
+                <div class="container-image">
+                    <img src="./assets/images/photoTeste.png" alt="" id="image-presentation">
                 </div>
             </div>
         </section>
@@ -238,31 +221,18 @@
                 <ul id="skills-list">
                     <li class="items-list-skills" data-aos="fade-up">JavaScript</li>
                     <li class="items-list-skills" data-aos="fade-up">Node.js</li>
-                    <li class="items-list-skills" data-aos="fade-up">Nest.js</li>
-                    <li class="items-list-skills" data-aos="fade-up">Express.js</li>
+                    <li class="items-list-skills" data-aos="fade-up">Azure</li>
                     <li class="items-list-skills" data-aos="fade-up">.NET</li>
                     <li class="items-list-skills" data-aos="fade-up">MySql</li>
                     <li class="items-list-skills" data-aos="fade-up">MongoDB</li>
                     <li class="items-list-skills" data-aos="fade-up">Linux</li>
-                    <li class="items-list-skills" data-aos="fade-up">Sequelize ORM</li>
-                    <li class="items-list-skills" data-aos="fade-up">Sass</li>
                     <li class="items-list-skills" data-aos="fade-up">TailwindCSS</li>
                     <li class="items-list-skills" data-aos="fade-up">RabbitMQ</li>
-                    <li class="items-list-skills" data-aos="fade-up">TypeScript</li>
-                    <li class="items-list-skills" data-aos="fade-up">HTML5</li>
-                    <li class="items-list-skills" data-aos="fade-up">CSS3</li>
-                    <li class="items-list-skills" data-aos="fade-up">Jest</li>
                     <li class="items-list-skills" data-aos="fade-up">Docker</li>
-                    <li class="items-list-skills" data-aos="fade-up">React</li>
                     <li class="items-list-skills" data-aos="fade-up">Git</li>
-                    <li class="items-list-skills" data-aos="fade-up">Serverless</li>
-                    <li class="items-list-skills" data-aos="fade-up">Chai</li>
-                    <li class="items-list-skills" data-aos="fade-up">Microservices</li>
+                    <li class="items-list-skills" data-aos="fade-up">Microserviços</li>
                 </ul>
             </div>
-        </section>
-
-        <section id="services">
             <div id="services-container">
                 <h2 class="mini-tittle" id="miniTittleTwo">../Works</h2>
                 <h2 class="tittle" id="myServices">Services</h2>
@@ -349,7 +319,6 @@
                 </ul>
             </div>
         </section>
-
         <section id="projects">
             <div id="projects-container">
                 <h2 class="mini-tittle" id="miniTittleThree">../Folder</h2>
@@ -359,27 +328,26 @@
                 <ul class="projects-list">
                     <li class="items-projects-list">
                         <div class="container-image1">
-                            <p class="text-definition">Landing Page</p>
+                            <p class="text-definition">Site</p>
                         </div>
                         <div class="infos-project">
+                            <h3 class="tittle">Surix</h3>
                             <div class="texts-project">
-
-                                <h3 class="tittle">Calculadora IPhone</h3>
-                                <p class="text">É um projeto que simula a calculadora de um IPhone no navegador</p>
+                                <p class="text">É um projeto para controles de surebets</p>
+                                <div class="techs">
+                                    <p class="text-tech">Sass</p>
+                                    <p class="text-tech">.NET</p>
+                                    <p class="text-tech">JavaScript</p>
+                                </div>
+                                <div class="footer-project">
+                                    <a class="git" href="">
+                                        <img src="./assets/icons/github2.svg" alt="">
+                                        GitHub
+                                    </a>
+                                    <a href="https://surix.runasp.net">
+                                        <img src="./assets/icons/rede.png" alt="">Site</a>
+                                </div>
                             </div>
-                            <div class="techs">
-                                <p class="text-tech">Sass</p>
-                                <p class="text-tech">Node.js</p>
-                                <p class="text-tech">JavaScript</p>
-                            </div>
-                        </div>
-                        <div class="footer-project">
-                            <a class="git" href="">
-                                <img src="./assets/icons/github2.svg" alt="">
-                                GitHub
-                            </a>
-                            <a href="">
-                                <img src="./assets/icons/rede.png" alt="">Site</a>
                         </div>
                     </li>
                     <li class="items-projects-list">
@@ -387,24 +355,24 @@
                             <p class="text-definition">Folder</p>
                         </div>
                         <div class="infos-project">
+                            <h3 class="tittle">Portfólio</h3>
                             <div class="texts-project">
-                                <h3 class="tittle">Portfólio</h3>
                                 <p class="text">Meu Portfólio para mostrar um
                                     pouco da minha bagagem profissional</p>
+                                    <div class="techs">
+                                        <p class="text-tech">HTML5</p>
+                                        <p class="text-tech">CSS3</p>
+                                        <p class="text-tech">JavaScript</p>
+                                    </div>
+                                    <div class="footer-project">
+                                        <a class="git" href="https://github.com/gabrieltech88/Portfolio">
+                                            <img src="./assets/icons/github2.svg" alt="">
+                                            GitHub
+                                        </a>
+                                        <a href="https://devgabrielramos.vercel.app/">
+                                            <img src="./assets/icons/rede.png" alt="">Site</a>
+                                    </div>
                             </div>
-                            <div class="techs">
-                                <p class="text-tech">HTML5</p>
-                                <p class="text-tech">CSS3</p>
-                                <p class="text-tech">JavaScript</p>
-                            </div>
-                        </div>
-                        <div class="footer-project">
-                            <a class="git" href="https://github.com/gabrieltech88/Portfolio">
-                                <img src="./assets/icons/github2.svg" alt="">
-                                GitHub
-                            </a>
-                            <a href="https://devgabrielramos.vercel.app/">
-                                <img src="./assets/icons/rede.png" alt="">Site</a>
                         </div>
                     </li>
                     <li class="items-projects-list">
@@ -412,24 +380,23 @@
                             <p class="text-definition">Landing Page</p>
                         </div>
                         <div class="infos-project">
+                            <h3 class="tittle">Calculadora IPhone</h3>
                             <div class="texts-project">
-
-                                <h3 class="tittle">Calculadora IPhone</h3>
                                 <p class="text">É um projeto que simula a calculadora de um IPhone no navegador</p>
+                                <div class="techs">
+                                    <p class="text-tech">Sass</p>
+                                    <p class="text-tech">Node.js</p>
+                                    <p class="text-tech">JavaScript</p>
+                                </div>
+                                <div class="footer-project">
+                                    <a class="git" href="">
+                                        <img src="./assets/icons/github2.svg" alt="">
+                                        GitHub
+                                    </a>
+                                    <a href="">
+                                        <img src="./assets/icons/rede.png" alt="">Site</a>
+                                </div>
                             </div>
-                            <div class="techs">
-                                <p class="text-tech">Sass</p>
-                                <p class="text-tech">Node.js</p>
-                                <p class="text-tech">JavaScript</p>
-                            </div>
-                        </div>
-                        <div class="footer-project">
-                            <a class="git" href="">
-                                <img src="./assets/icons/github2.svg" alt="">
-                                GitHub
-                            </a>
-                            <a href="">
-                                <img src="./assets/icons/rede.png" alt="">Site</a>
                         </div>
                     </li>
                 </ul>

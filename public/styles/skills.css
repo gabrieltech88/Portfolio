@@ -1,6 +1,5 @@
 :root {
-    --backgroud: #383837;
-    --orange-primary: #F38F00 ;
+    --orange-primary: #f06d0d; 
     --orange-secondary: #E57600;
     --montserrat: 'Montserrat', serif;
     --inter: 'Inter', serif;
@@ -14,16 +13,19 @@
 #skills {
     display: flex;
     justify-content: center;
-    background: linear-gradient(to bottom, #292929 10%, #292929 90%);
+    width: 100%;
+    background: linear-gradient(to bottom, #14161b, #21252b);
+    flex-direction: column;
+    align-items: center;
 }
 
 .skills-container {
     display: flex;
     flex-direction: column;
-    margin-top: 110px;
+    margin-top: 60px;
     gap: 20px;
-    width: 75%;
-    margin-bottom: 110px;
+    width: 90%;
+    margin-bottom: 120px;
 }
 
 hr {
@@ -39,20 +41,27 @@ hr {
 }
 
 #skills-list {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 8px;
+    row-gap: 12px;
+    width: 100%;
     opacity: 0;
-    flex-wrap: wrap;
-    gap: 8px;
     justify-content: center;
 }
 
 .items-list-skills {
-    background-color: #151515;
-    border-radius: 7px;
+    background-color: #1d2025;
+    line-height: normal;
+    border: 1px solid hsla(220 13% 18%);
+    border-radius: 12px;
     align-items: center;
     justify-content: center;
-    padding: 6px;
-    font-size: 14px;
+    padding: 10px 0px;
+    width: 98%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
     font-family: var(--spartan);
     opacity: 0;
     transform: translateY(20px);
@@ -60,7 +69,7 @@ hr {
 }
 
 .items-list-skills:hover {
-    background-color: #5a5959;
+    border: 1px solid var(--orange-primary);
 }
 
 #skills-list.show {
