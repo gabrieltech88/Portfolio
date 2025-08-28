@@ -1,7 +1,7 @@
 :root {
     --secondary-backgroud: #14161a;
     --background: #0f0f0f;
-    --orange-primary: #f06d0d; 
+    --orange-primary: #f06d0d;
     --orange-secondary: #E57600;
     --montserrat: 'Montserrat', serif;
     --inter: 'Inter', serif;
@@ -29,7 +29,7 @@ body {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--orange-primary);
+    background-color: var(--orange-primary);
 }
 
 
@@ -92,9 +92,12 @@ body::-webkit-scrollbar-thumb {
 .link-header:hover {
     color: var(--orange-primary);
     display: inline-block;
-    transition: all 0.3s; /* Transição suave de 300ms para todos os estilos */
-    transform: scale(1); /* Transformação inicial, sem escalonamento */
-    transform: scale(1.05); /* Aumenta o tamanho do elemento em 25% ao passar o mouse */
+    transition: all 0.3s;
+    /* Transição suave de 300ms para todos os estilos */
+    transform: scale(1);
+    /* Transformação inicial, sem escalonamento */
+    transform: scale(1.05);
+    /* Aumenta o tamanho do elemento em 25% ao passar o mouse */
 }
 
 #header .navigation-header #icons-container {
@@ -121,15 +124,16 @@ body::-webkit-scrollbar-thumb {
     transform: translateX(30px);
     background-image: url(../assets/icons/states.svg);
     background-repeat: no-repeat;
-    background-size:cover;
-    
+    background-size: cover;
+
 }
 
 [trans="pt"] {
+
     background-image: url(../assets/icons/1595219911626933815.svg);
     background-repeat: no-repeat;
-    background-size:cover;
-    
+    background-size: cover;
+
 }
 
 #second-header {
@@ -147,17 +151,19 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+
 }
 
 #second-nav p {
     color: aliceblue;
 }
 
+
 #second-header .button {
     width: 30px;
     height: 30px;
     border-radius: 50%;
+    border: none;
     background-color: transparent;
     margin-left: 0;
     cursor: pointer;
@@ -168,10 +174,11 @@ body::-webkit-scrollbar-thumb {
     width: 60px;
     border-radius: 15px;
     background-color: #555555;
-    position: relative;
+    align-items: center;
 }
 
-#menu-toggle, .menu-icon{
+#menu-toggle,
+.menu-icon {
     display: none;
 }
 
@@ -180,109 +187,30 @@ body::-webkit-scrollbar-thumb {
     fill: aliceblue;
 }
 
-
-@keyframes toogle {
-    
+.navigation-header-mobile {
+    display: none;
 }
 
 @media (max-width: 500px) {
-    #header #icons-container {
+    .navigation-header {
         display: none;
     }
 
-    .icons {
-        display: none;
-    }
-
-    .list-header {
-        display: none;
-    }
-
-    #header {
-        padding: 10px;
-        justify-content: center;
-        border-radius: 0;
-        margin-top: 0%;
-        width: 100%;
-        height: 50px;
-        margin-top: 0;
-    }
-
-
-    #menu-burguer {
+    .navigation-header-mobile {
         display: flex;
-        flex-direction: column;
-        gap: 4px;
-
     }
 
-    .menu-toggle {
-        display: none; /* O checkbox fica invisível */
-    }
-    
-   .menu-icon {
-        display: flex;
-        flex-direction: column;
-        gap: 3px;
-   }
-    
-    .bar {
+    .hamburger .hamburger-inner,
+    .hamburger .hamburger-inner::before,
+    .hamburger .hamburger-inner::after {
         background-color: white;
-        height: 2px;
-        width: 15px;
-        transition: transform 0.6s ease, background-color 0.3s ease;
+        /* ou qualquer cor */
     }
 
-    #nav-burguer {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-    }
-
-    .menu-toggle:checked + .menu-icon + #nav-burguer {
-        display: flex;
-        margin-top: 107.5px;
-        background-color: rgba(0, 0, 0, 0.5);
-        width: 100%;
-    }
-    .menu-toggle:checked + .menu-icon {
-        gap: 0px;
-        
-    }
-
-    .menu-toggle:checked + .menu-icon .bar:nth-child(1) {
-        transform: rotate(30deg) translateY(4px);
+    /* Cor do X (quando ativo) */
+    .hamburger.is-active .hamburger-inner,
+    .hamburger.is-active .hamburger-inner::before,
+    .hamburger.is-active .hamburger-inner::after {
         background-color: white;
     }
-
-    .menu-toggle:checked + .menu-icon .bar:nth-child(2) {
-        opacity: 0;
-    }
-    
-    .menu-toggle:checked + .menu-icon .bar:nth-child(3) {
-        transform: rotate(-30deg) ;
-        background-color: white;
-        
-    }
-
-    .menu-toggle:checked + #container-icons-menu-burguer {
-        display: flex;
-    }
-    
-    .menu-toggle:checked + #list-menu-burguer{ 
-        display: flex;
-        flex-direction: column;
-        transform: translateX(100px);
-        gap: 8px;
-
-    }
-
-    #list-menu-burguer li a {
-        text-decoration: none;
-        color: white;
-        font-family: var(--jockey);
-        font-size: 16px;
-    }
-    
-    
 }

@@ -1,67 +1,62 @@
-const translate = document.getElementById('translate');
-const buttonContainer = document.getElementById('button-container')
-
-
-translate.addEventListener("click", async function () {
-    
-    const idioma = await carregarJson();
-    console.log(idioma)
-    
-        if(translate.getAttribute("trans") == "pt") {
-            translate.setAttribute("trans", "en")
-            //translate.style.marginLeft = '30px';
-            buttonContainer.style.backgroundColor = '#4CAF50';
-            
-            document.getElementById("apresentacao").innerText = idioma.pt.apresentacao
-            document.getElementById("aboutTextOne").innerText = idioma.pt.aboutTextOne
-            document.getElementById("aboutTextTwo").innerText = idioma.pt.aboutTextTwo
-            document.getElementById("keySkills").innerText = idioma.pt.keySkills
-            document.getElementById("mySkills").innerText = idioma.pt.mySkills
-            document.getElementById("skillsText").innerText = idioma.pt.skillsText
-            document.getElementById("myServices").innerText = idioma.pt.myServices
-            document.getElementById("descricaoOne").innerText = idioma.pt.descricaoOne
-            document.getElementById("descricaoTwo").innerText = idioma.pt.descricaoTwo
-            document.getElementById("descricaoThree").innerText = idioma.pt.descricaoThree
-            document.getElementById("descricaoFour").innerText = idioma.pt.descricaoFour
-            document.getElementById("descricaoFive").innerText = idioma.pt.descricaoFive
-            document.getElementById("descricaoSix").innerText = idioma.pt.descricaoSix
-            document.getElementById("myProjects").innerText = idioma.pt.myProjects
-            document.getElementById("sendMessage").innerText = idioma.pt.sendMessage
-            document.getElementById("textMessage").innerText = idioma.pt.textMessage
-            document.getElementById("aboutTittle").innerText = idioma.pt.aboutTittle
-            
-        } else {
-            translate.setAttribute("trans", "pt")
-            //translate.style.marginLeft = '0px';
-            buttonContainer.style.backgroundColor = '#555555'
-            document.getElementById("apresentacao").innerText = idioma.en.apresentacao
-            document.getElementById("aboutTextOne").innerText = idioma.en.aboutTextOne
-            document.getElementById("aboutTextTwo").innerText = idioma.en.aboutTextTwo
-            document.getElementById("keySkills").innerText = idioma.en.keySkills
-            document.getElementById("mySkills").innerText = idioma.en.mySkills
-            document.getElementById("skillsText").innerText = idioma.en.skillsText
-            document.getElementById("myServices").innerText = idioma.en.myServices
-            document.getElementById("descricaoOne").innerText = idioma.en.descricaoOne
-            document.getElementById("descricaoTwo").innerText = idioma.en.descricaoTwo
-            document.getElementById("descricaoThree").innerText = idioma.en.descricaoThree
-            document.getElementById("descricaoFour").innerText = idioma.en.descricaoFour
-            document.getElementById("descricaoFive").innerText = idioma.en.descricaoFive
-            document.getElementById("descricaoSix").innerText = idioma.en.descricaoSix
-            document.getElementById("myProjects").innerText = idioma.en.myProjects
-            document.getElementById("sendMessage").innerText = idioma.en.sendMessage
-            document.getElementById("textMessage").innerText = idioma.en.textMessage
-            document.getElementById("aboutTittle").innerText = idioma.en.aboutTittle
-        }
-}) 
+const translateBtn = document.getElementById('translate');
+const buttonContainer = document.getElementById('button-container');
 
 async function carregarJson() {
-    try {
-        const dados = await fetch('./src/scripts.json', {
-            method: "GET",
-        })
-
-        return dados.json()
-    } catch {
-        throw new Error("Não foi possível captar tradução")
-    }
+    const response = await fetch('./src/scripts.json');
+    if (!response.ok) throw new Error('Não foi possível carregar traduções');
+    return await response.json();
 }
+
+translateBtn.addEventListener('click', async () => {
+    const texts = await carregarJson();
+    const lang = translateBtn.getAttribute('trans') === 'pt' ? 'en' : 'pt';
+    translateBtn.setAttribute('trans', lang);
+    buttonContainer.style.backgroundColor = lang === 'en' ? '#4CAF50' : '#555555';
+
+    const map = texts[lang];
+
+    document.querySelectorAll('.saibamais').forEach(el => {
+        el.textContent = map.saibaMais;
+    });
+
+    document.getElementById('title-service1').textContent = map.titleService1;
+    document.getElementById('title-service2').textContent = map.titleService2;
+    document.getElementById('title-service3').textContent = map.titleService3;
+    document.getElementById('title-service4').textContent = map.titleService4;
+    document.getElementById('title-service5').textContent = map.titleService5;
+    document.getElementById('title-service6').textContent = map.titleService6;
+
+    document.getElementById('btn-projects').textContent = map.btnProjects;
+    document.getElementById('btn-fale-comigo').textContent = map.btnFaleComigo;
+    document.getElementById('menuHome').textContent = map.menuHome;
+    document.getElementById('menuAbout').textContent = map.menuAbout;
+    document.getElementById('menuProjects').textContent = map.menuProjects;
+    document.getElementById('miniTittleAbout').textContent = map.miniTittleAbout;
+    document.getElementById('apresentacao').textContent = map.apresentacao;
+    document.getElementById('aboutTextOne').textContent = map.aboutTextOne;
+    document.getElementById('miniTittleOne').textContent = map.miniTittleOne;
+    document.getElementById('mySkills').textContent = map.mySkills;
+    document.getElementById('skillsText').textContent = map.skillsText;
+    document.getElementById('miniTittleTwo').textContent = map.miniTittleTwo;
+    document.getElementById('myServices').textContent = map.myServices;
+    document.getElementById('descricaoOne').textContent = map.descricaoOne;
+    document.getElementById('descricaoTwo').textContent = map.descricaoTwo;
+    document.getElementById('descricaoThree').textContent = map.descricaoThree;
+    document.getElementById('descricaoFour').textContent = map.descricaoFour;
+    document.getElementById('descricaoFive').textContent = map.descricaoFive;
+    document.getElementById('descricaoSix').textContent = map.descricaoSix;
+    document.getElementById('miniTittleThree').textContent = map.miniTittleThree;
+    document.getElementById('myProjects').textContent = map.myProjects;
+    document.getElementById('sendMessage').textContent = map.sendMessage;
+    document.getElementById('textMessage').textContent = map.textMessage;
+    document.querySelector('#footer .text').textContent = map.footerTagline;
+    document.getElementById('fastlinks').textContent = map.quickLinks;
+    document.querySelector('#footer .contact-container p').textContent = map.copyright;
+});
+
+
+const btn = document.querySelector('.hamburger');
+
+btn.addEventListener('click', () => {
+  btn.classList.toggle('is-active');
+});

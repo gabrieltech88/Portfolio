@@ -73,17 +73,6 @@ main {
     color: #a1a1a1;
 }
 
-.text-container {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 0;
-    font-size: 16px;
-    gap: 10px;
-    font-family: var(--kodchasan);
-    font-weight: 300;
-}
-
-
 .infos-container .text-presetation {
     font-family: var(--kodchasan);
     font-size: 13px;
@@ -175,4 +164,35 @@ main {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+.text-btn-presentation .text {
+    line-height: 1.5;
+    font-family: var(--inter);
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 430px) {
+    #presetation-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .secondary-container {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .infos-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #aboutTextOne {
+        text-align: center;
+    }
 }
