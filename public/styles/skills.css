@@ -81,3 +81,12 @@ hr {
     opacity: 1;
     transform: translateY(0); /* Efeito de aparecer */
 }
+
+@media (max-width: 430px) {
+    .skills-container {
+        width: 80%;
+    }
+
+    
+}
+

@@ -12,10 +12,6 @@
 
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     background-color: #14161a;
     height: 100vh;
@@ -25,24 +21,6 @@ body {
     color: white;
     align-items: center;
     overflow-x: hidden;
-    overflow-y: auto;
-}
-
-body::-webkit-scrollbar-thumb {
-    background-color: var(--orange-primary);
-}
-
-
-#menu-burguer {
-    display: none;
-}
-
-#nav-burguer {
-    display: none;
-}
-
-#list-menu-burguer {
-    display: none;
 }
 
 /*Header*/
@@ -191,13 +169,29 @@ body::-webkit-scrollbar-thumb {
     display: none;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 430px) {
+    body {
+        display: flex;
+        align-items: center;
+    }
+
+    #header {
+        width: 90%;
+    }
+    
+
     .navigation-header {
         display: none;
     }
 
     .navigation-header-mobile {
         display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    #text-header {
+        margin-left: 18%;
     }
 
     .hamburger .hamburger-inner,

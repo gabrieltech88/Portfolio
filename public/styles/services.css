@@ -35,8 +35,8 @@
     padding: 20px;
     height: 270px;
     border: 1px solid hsla(220 13% 18%);
-     opacity: 1 ;
-     transform: translateY(20px);
+    opacity: 1;
+    transform: translateY(20px);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
 }
@@ -125,7 +125,21 @@
 
 
 @media (max-width: 430px) {
+    #services-container {
+        width: 80%;
+    }
+
+    #services-list {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+    }
+
     .items-list-services {
-        height: 500px;
+        width: 80%;
+    }
+
+    .infos-services {
+        justify-content: center;
     }
 }

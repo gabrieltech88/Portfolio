@@ -69,7 +69,7 @@ main {
 
 }
 
-#aboutTextOne, #aboutTextTwo {
+#aboutTextOne {
     color: #a1a1a1;
 }
 
@@ -86,7 +86,8 @@ main {
 
 .buttons {
     display: flex;
-    gap: 10px;;
+    gap: 10px;
+    ;
 }
 
 #icons-container .icons {
@@ -183,6 +184,16 @@ main {
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
+        width: 100%
+    }
+
+    .part1 {
+        width: 80%;
+        text-align: left;
+    }
+
+    .text-btn-presentation {
+        width: 80%;
     }
 
     .infos-container {
