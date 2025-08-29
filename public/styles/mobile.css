@@ -1,31 +1,112 @@
-@media (max-width: 500px) { 
-    #presetation-container {
+@media (max-width: 450px) {
+
+    html {
+        font-size: 14px;
+        overflow-x: hidden;
+    }
+
+    /*HEADER*/
+    body {
         display: flex;
-        
         align-items: center;
+        overflow-x: hidden;
+        
+    }
+
+    #header {
+        width: 90%;
+    }
+
+
+    .navigation-header {
+        display: none;
+    }
+
+    .navigation-header-mobile {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    #text-header {
+        margin-left: 18%;
+    }
+
+    .hamburger .hamburger-inner,
+    .hamburger .hamburger-inner::before,
+    .hamburger .hamburger-inner::after {
+        background-color: white;
+        /* ou qualquer cor */
+    }
+
+    /* Cor do X (quando ativo) */
+    .hamburger.is-active .hamburger-inner,
+    .hamburger.is-active .hamburger-inner::before,
+    .hamburger.is-active .hamburger-inner::after {
+        background-color: white;
     }
 
     .infos-container {
         width: 100%;
     }
-    
-    #about-container {
-        display: flex;
-        flex-direction: column;
-    }
 
-    .keys-list {
-        flex-wrap: wrap;
+    /*===============================
+            PRESENTATION
+    ===============================*/
+
+    .container-image {
+        display: flex;
+        align-items: center;
         justify-content: center;
     }
-    
-    #skills {
-      
+
+    #presetation-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    #services {
-        
+    .secondary-container {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        width: 100%;
+        gap: 2.5rem;
     }
+
+    .part1 {
+        width: 80%;
+        text-align: left;
+    }
+
+    .text-btn-presentation {
+        width: 80%;
+    }
+
+    .infos-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #aboutTextOne {
+        text-align: center;
+    }
+
+
+    /*===============================
+                SKILLS
+      ===============================*/
+
+    #skills-list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+    /*===============================
+                SERVIÇOS
+      ===============================*/
 
     #services-list {
         grid-template-columns: repeat(2, 1fr);
@@ -33,43 +114,63 @@
     }
 
     .items-list-services {
-        height: 325px;
+        height: 15rem;
+        /* 200px */
+    }
+
+    .infos-services {
+        justify-content: center;
     }
 
     .description {
-        width: 80%;
+        width: 100%;
     }
 
-    #projects {
-        
+    .tittle-services {
+        font-size: 1.125rem;
+        /* 18px */
     }
 
-    .projects-list {
+    #services-list {
+        width: 100%;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, auto);
-        
+        grid-template-rows: repeat(3, auto);
     }
 
+    .infos-services {
+        justify-content: center;
+    }
+
+
+    /*===============================
+                PROJETOS
+    ===============================*/
     .items-projects-list {
-        height: auto;
+        height: 20rem;
     }
 
     .items-projects-list .container-image1 {
-        height: 100px;
+        height: 7rem;
     }
-    
+
     .items-projects-list .container-image2 {
-        height: 100px;
+        height: 7rem;
     }
-    
+
     .items-projects-list .container-image3 {
-        height: 100px;
+        height: 7rem;
     }
 
-    .techs {
-        flex-wrap: wrap;
+    .projects-list {
+        display: flex;
+        flex-direction: column;
     }
 
+    .items-projects-list {}
+
+
+
+    /*FORMULARIO EMAIL*/
 
     #form-email-container {
         flex-direction: column;
@@ -77,17 +178,19 @@
     }
 
     .input-form {
-        width: 300px;
+        width: 100%;
     }
 
     #form {
         display: flex;
         align-items: center;
     }
-    
+
     #button-form {
-        width: 310px;
+        width: 100%;
     }
+
+    /*RODAPE*/
 
     .second-footer {
         flex-direction: column;
@@ -102,30 +205,26 @@
         width: 30%;
     }
 
-    #aboutTextOne, #aboutTextTwo {
-        width: 100%;
-    }
-
     @keyframes digitar {
         0% {
-          width: 0;
+            width: 0;
         }
+
         25% {
             width: 0;
         }
+
         50% {
-          width: 100%;
-        } 
-        75% {
-            width: 100%;  /* Mantém o texto visível no 50% até 75% (pausa) */
+            width: 100%;
         }
+
+        75% {
+            width: 100%;
+            /* Mantém o texto visível no 50% até 75% (pausa) */
+        }
+
         100% {
             width: 0;
         }
     }
-
-    .infos-container .text-presetation {
-       font-size: 11.5px;
-    }
-
 }

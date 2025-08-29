@@ -7,11 +7,9 @@
     --kodchasan: 'Kodchasan', serif;
     --josefin: 'Josefin Sans', serif;
     --jockey: 'Jockey One', serif;
-
 }
 
-/*CONTAINERS*/
-
+/* CONTAINERS */
 main {
     display: flex;
     flex-direction: column;
@@ -21,11 +19,11 @@ main {
 #presetation-container {
     display: flex;
     background-color: #14161a;
-    margin-top: 60px;
+    margin-top: 3.75rem; /* 60px */
     height: auto;
     width: 100%;
-    padding: 15px;
-    margin-bottom: 60px;
+    padding: 0.9375rem; /* 15px */
+    margin-bottom: 3.75rem; /* 60px */
 }
 
 .secondary-container {
@@ -39,34 +37,31 @@ main {
     width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 0.9375rem; /* 15px */
 }
 
 .part1 {
     display: flex;
     flex-direction: column;
-    gap: 28px;
+    gap: 1.75rem; /* 28px */
 }
-
 
 .infos-container .mini-tittle {
     font-family: var(--spartan);
     font-weight: 600;
-    font-size: 28px;
+    font-size: 1.75rem; /* 28px */
 }
 
 .infos-container .tittle {
     font-family: var(--jockey);
-    font-size: 56px;
-
+    font-size: 3.5rem; /* 56px */
 }
 
 #miniTittleAbout {
     font-family: var(--jockey);
     font-weight: 400;
-    font-size: 14px;
-    margin-bottom: 12px;
-
+    font-size: 0.875rem; /* 14px */
+    margin-bottom: 0.75rem; /* 12px */
 }
 
 #aboutTextOne {
@@ -75,19 +70,18 @@ main {
 
 .infos-container .text-presetation {
     font-family: var(--kodchasan);
-    font-size: 13px;
+    font-size: 0.8125rem; /* 13px */
 }
 
 #icons-container {
     display: flex;
-    gap: 30px;
-    margin-top: 12px;
+    gap: 1.875rem; /* 30px */
+    margin-top: 0.75rem; /* 12px */
 }
 
 .buttons {
     display: flex;
-    gap: 10px;
-    ;
+    gap: 0.625rem; /* 10px */
 }
 
 #icons-container .icons {
@@ -95,9 +89,8 @@ main {
 }
 
 #icons-container .icons:hover {
-    color: var(--orange-primary)
+    color: var(--orange-primary);
 }
-
 
 .digitar {
     font-family: "Courier New", Courier, monospace;
@@ -119,12 +112,11 @@ main {
     }
 
     50% {
-        width: 70%;
+        width: 56%;
     }
 
     75% {
-        width: 70%;
-        /* Mantém o texto visível no 50% até 75% (pausa) */
+        width: 56%;
     }
 
     100% {
@@ -140,20 +132,19 @@ main {
 
 .btn-presentation {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.125rem; /* 18px */
     font-family: var(--inter);
     font-weight: 600;
     border: 1.5px solid var(--orange-secondary);
     color: #fff;
     background-color: var(--orange-primary);
-    border-radius: 10px;
-    padding: 10px 20px;
+    border-radius: 0.625rem; /* 10px */
+    padding: 0.625rem 1.25rem; /* 10px 20px */
 }
 
 .btn-presentation:nth-child(2) {
     background-color: transparent;
     color: var(--orange-primary);
-
 }
 
 .btn-presentation:nth-child(2):hover {
@@ -164,46 +155,11 @@ main {
 .text-btn-presentation {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0.625rem; /* 10px */
 }
 
 .text-btn-presentation .text {
     line-height: 1.5;
     font-family: var(--inter);
     letter-spacing: 0.5px;
-}
-
-@media (max-width: 430px) {
-    #presetation-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .secondary-container {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        width: 100%
-    }
-
-    .part1 {
-        width: 80%;
-        text-align: left;
-    }
-
-    .text-btn-presentation {
-        width: 80%;
-    }
-
-    .infos-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #aboutTextOne {
-        text-align: center;
-    }
 }

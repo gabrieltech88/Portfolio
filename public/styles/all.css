@@ -60,11 +60,3 @@ main {
     gap: 8px;
     width: 80%;
 }
-
-@media (max-width: 430px) {
-    .container-image {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}

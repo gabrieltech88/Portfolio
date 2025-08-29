@@ -8,30 +8,27 @@
     --kodchasan: 'Kodchasan', serif;
     --josefin: 'Josefin Sans', serif;
     --jockey: 'Jockey One', serif;
-
 }
 
 #footer {
     width: 100%;
     background-color: #14161a;
-    
 }
 
 #footer hr {
-   height: 1px;
+    height: 0.0625rem; /* 1px */
 }
 
 .footer-container {
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 6.25rem; /* 100px */
 }
 
 .second-footer {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 20px;
-    
+    margin-bottom: 1.25rem; /* 20px */
 }
 
 .second-footer span {
@@ -39,29 +36,30 @@
 }
 
 .second-footer .tittle {
-    font-size: 18px;
+    font-size: 1.125rem; /* 18px */
 }
 
 .second-footer .text {
     font-weight: 200;
 }
 
-.second-footer .fast-links:hover, .items-list-contact:hover {
+.second-footer .fast-links:hover,
+.items-list-contact:hover {
     color: var(--orange-primary);
 }
 
 .tittle-lists {
     color: var(--orange-primary);
     font-family: var(--jockey);
-    font-size: 18px;
+    font-size: 1.125rem; /* 18px */
 }
 
 .list-links {
     display: flex;
     flex-direction: column;
-    margin-top: 12px;
+    margin-top: 0.75rem; /* 12px */
     font-family: var(--spartan);
-    gap: 5px;
+    gap: 0.3125rem; /* 5px */
 }
 
 .list-links a {
@@ -74,16 +72,16 @@
 }
 
 .icons-contact {
-    width: 16px;
+    width: 1rem; /* 16px */
 }
 
 .items-list-contact {
     display: flex;
-    gap: 7px;
+    gap: 0.4375rem; /* 7px */
 }
 
 .container-icons svg {
-    width: 16px;
+    width: 1rem; /* 16px */
 }
 
 .container-icons svg:hover {
@@ -97,14 +95,14 @@
 .contact-container {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 1.25rem; /* 20px */
+    margin-bottom: 1.25rem; /* 20px */
 }
 
 .contact-container p {
     font-family: var(--spartan);
     font-weight: 200;
-    font-size: 12px;
+    font-size: 0.75rem; /* 12px */
     color: #757373;
 }
 
@@ -114,5 +112,5 @@
 
 .container-icons {
     display: flex;
-    gap: 12px;
+    gap: 0.75rem; /* 12px */
 }

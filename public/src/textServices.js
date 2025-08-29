@@ -1,5 +1,10 @@
+document.addEventListener("DOMContentLoaded", () => {
+    ajustarDescricoesParaMobile();
+})
+
+
 function ajustarDescricoesParaMobile() {
-    const isMobile = window.innerWidth < 431;
+    const isMobile = window.innerWidth < 450;
 
     const descricoesCurtas = {
         descricaoOne: "Sites responsivos, modernos e rápidos para sua presença online.",
@@ -27,8 +32,9 @@ function ajustarDescricoesParaMobile() {
     }
 }
 
+
 // Chama ao carregar
-ajustarDescricoesParaMobile();
+
 
 // Atualiza ao redimensionar
 window.addEventListener('resize', ajustarDescricoesParaMobile);
