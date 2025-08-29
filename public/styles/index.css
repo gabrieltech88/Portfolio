@@ -23,6 +23,10 @@ body {
     overflow-x: hidden;
 }
 
+.mobile-header-two {
+    display: none;
+}
+
 /*Header*/
 #header {
     width: 90%;

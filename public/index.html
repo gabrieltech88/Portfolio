@@ -29,15 +29,26 @@
 <body>
     <header id="header">
         <nav class="navigation-header-mobile">
-            <button class="hamburger hamburger--spin" type="button">
-                <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                </span>
-            </button>
-            <p id="text-header">
+            <div class="mobile-header-one">
+                <button class="hamburger hamburger--spin" type="button" id="openMenu">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+                <p id="text-header">
                     <span class="bold ">GABRIEL </span>RAMOS
                 </p>
+                <div id="menuContent" style="display: none;">
+                    <ul>
+                        <li><a href="#a">Item A</a></li>
+                        <li><a href="#b">Item B</a></li>
+                        <li><a href="#c">Item C</a></li>
+                    </ul>
+                </div>
+            </div>
+
         </nav>
+
         <nav class="navigation-header">
             <div>
                 <p id="text-header">
@@ -540,6 +551,21 @@
                     alert('Erro ao enviar o email. Tente novamente.');
                     console.error(error);
                 });
+        });
+    </script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script>
+        tippy('#openMenu', {
+            content: document.getElementById('menuContent'),
+            allowHTML: true,
+            interactive: true,      // Permite clicar dentro do menu
+            trigger: 'click',    
+            touch: ['hold', 500],    // Abre apenas com clique
+            placement: 'bottom-start',
+            hideOnClick: 'toggle',
+            theme: 'light-border',  
+            appendTo: document.body, // Exemplo de tema
         });
     </script>
 </body>

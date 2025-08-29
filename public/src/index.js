@@ -59,4 +59,8 @@ const btn = document.querySelector('.hamburger');
 
 btn.addEventListener('click', () => {
   btn.classList.toggle('is-active');
+
+  const menu = document.querySelector('.mobile-header-two')
+  menu.classList.add('yes')
 });
+
