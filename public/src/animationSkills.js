@@ -20,8 +20,3 @@ function checkSkillsVisibility() {
   // Detecta o evento de rolagem
   window.addEventListener("scroll", checkSkillsVisibility);
   checkSkillsVisibility();  // Verifica na primeira carga
-
-  document.getElementById("menu-burguer").addEventListener("click", function() {
-    const menu = document.getElementById("menu-burguer");
-    menu.classList.toggle("active");
-});

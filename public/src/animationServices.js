@@ -1,5 +1,5 @@
 function checkServicesVisibility() {
-    const servicesSection = document.getElementById("services");
+    const servicesSection = document.getElementById("skills");
     const servicesCards = document.querySelectorAll('.items-list-services');
     const servicesPosition = servicesSection.getBoundingClientRect();
   
